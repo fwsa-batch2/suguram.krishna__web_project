@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PVR Sign-Up</title>
+    <link rel="shortcut icon" href="/src/assets/img/pvr.jpg">
+    <link rel="stylesheet" href="/src/assets/css/style.css">
+</head>
+
+<body bgcolor="black">
+    <header>
+        <a href="/src/pages/html/PVR.html"><img class="logo" src="/src/assets/img/pvr.jpg" alt="logo"></a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="/src/pages/html/PVR.html">HOME</a></li>
+                <li><a href="/src/pages/html/pvrlogin.html">LOGIN</a></li>
+                <li><a href="/src/pages/html/pvrsignup.html">SIGN-UP</a></li>
+                <li><a href="/src/pages/html/pvrlocation.html">LOCATION</a></li>
+            </ul>
+        </nav>
+        <a class="button" href="/src/pages/html/booking.html"><button>Book Tickets</button></a>
+    </header>
+
+    <center>
+        <h1 style="color: rgb(255, 255, 255);">Book Your<span style="color: gold;"> Ticket</span></h1><br>
+        </b>
+
+        <table style="color: gold; border: midnightblue;">
+            <tr>
+                <td style="color: gold;">Name</td>
+                <td><input type="text" name="name" placeholder="Enter Your name" required>
+
+            </tr>
+
+            <tr>
+                <!-- <td><label for="browser">Enter The Movie Name:</label></td> -->
+                <td>Movie Name</td>
+                <td><input type="text" list="movies" name="moviename" autocomplete="on" placeholder="Movie Name"
+                        required>
+                    <datalist id="movies">
+                        <option value="Annathey">
+                        <option value="Beast">
+                        <option value="Doctor">
+                        <option value="Maanadu">
+                        <option value="Vikram">
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>Phone no</td>
+                <td> <input type="tel" name="phone" placeholder="Enter Mobile # here" required>
+            </tr>
+            <tr>
+                <td>Show date and time</td>
+                <td><input type="date" name="showdate"></td>
+            </tr>
+
+            <tr>
+                <td>No of Adults </td>
+                <td><input type="number" name="tickets" id="tickets" min="1" max="10"></td>
+            </tr>
+
+            <tr>
+                <td>No of childrens </td>
+                <td><input type="number" name="childrens" id="childrens" min="1" max="5"></td>
+            </tr>
+
+            <tr>
+                <td><button type="submit" name="Book My Show">Book My Show</button></td>
+                <td><button type="reset" name="reset">Reset</button></td>
+            </tr>
+
+        </table>
+    </center>
+
+</body>
+
+</html>
