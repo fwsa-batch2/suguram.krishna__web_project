@@ -6,6 +6,9 @@
   padding: 0;
 }
 
+body{
+  background-color: black;
+}
 li,
 a,
 button {
@@ -120,4 +123,64 @@ span {
 .table-name{
     text-align: center;
     color: gold;
+}
+
+/* LOGIN AND SIGN UP PAGE */
+
+.login{
+  text-align: center;
+}
+
+.box input[type="text"],
+.box input[type="email"],
+.box input[type="password"],
+.box input[type="date"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: gold;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.box input[type="submit"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid gold;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.box input[type="submit"]:hover {
+  background-color: gold;
+  color: black;
+ 
+}
+
+
+.box input[type="text"]:focus,
+.box input[type="email"]:focus,
+.box input[type="password"]:focus,
+.box input[type="date"]:focus{
+  width: 280px;
+  border-color: white;
+}
+
+::placeholder{
+  color: gold;
 }
