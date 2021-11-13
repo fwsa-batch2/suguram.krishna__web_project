@@ -181,6 +181,16 @@ span {
   border-color: white;
 }
 
+#login-box {
+  color: white;
+  font-size: 20px;
+}
+
+#login-box-link{
+  color: gold;
+  font-size: 18px;
+}
+
 ::placeholder{
   color: gold;
 }
