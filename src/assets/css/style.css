@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-body{
+body {
   background-color: black;
 }
 li,
@@ -87,6 +87,17 @@ span {
 #banner-image {
   width: 100%;
   border-radius: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  filter: blur(10px);
+}
+
+#banner-image:hover {
+  width: 100%;
+  border-radius: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  filter: blur(0px);
 }
 
 .logo-center {
@@ -96,10 +107,21 @@ span {
 
 .heading {
   color: whitesmoke;
+  text-align: center;
 }
 
 .heading span {
   color: gold;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.lang-heading{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .movie-description {
@@ -108,26 +130,28 @@ span {
   font-size: 26px;
   text-align: center;
 }
-.image-table{
-    margin-left: 200px;
-    margin-right: 200px;
+.image-table {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
-.image-table td{
-    padding: 20px ;
-}
-
-.image-table img{
-    border-radius: 24px;
+.image-table td {
+  padding: 20px;
 }
 
-.table-name{
-    text-align: center;
-    color: gold;
+.image-table img {
+  border-radius: 24px;
+}
+
+.table-name {
+  text-align: center;
+  color: gold;
 }
 
 /* LOGIN AND SIGN UP PAGE */
 
-.login{
+.login {
   text-align: center;
 }
 
@@ -166,18 +190,21 @@ span {
   font-size: 20px;
   margin-top: 30px;
 }
-.box input[type="reset"]:hover,
+
+.box input[type="reset"]:hover {
+  background-color: mediumblue;
+  color: white;
+}
 .box input[type="submit"]:hover {
   background-color: gold;
   color: black;
- 
 }
 
 .box input[type="name"]:focus,
 .box input[type="text"]:focus,
 .box input[type="email"]:focus,
 .box input[type="password"]:focus,
-.box input[type="date"]:focus{
+.box input[type="date"]:focus {
   width: 280px;
   border-color: white;
 }
@@ -187,11 +214,11 @@ span {
   font-size: 20px;
 }
 
-#login-box-link{
+#login-box-link {
   color: gold;
   font-size: 18px;
 }
 
-::placeholder{
+::placeholder {
   color: gold;
 }
