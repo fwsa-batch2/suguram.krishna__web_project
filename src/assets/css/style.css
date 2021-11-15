@@ -8,6 +8,7 @@
 
 body {
   background-color: black;
+  font-family: 'Nunito', sans-serif;
 }
 li,
 a,
@@ -124,7 +125,7 @@ span {
   margin-bottom: 20px;
 }
 
-.movie-description {
+.movie-description p {
   color: rgb(255, 255, 255);
   line-height: 1.6;
   font-size: 26px;
@@ -147,8 +148,30 @@ span {
 .table-name {
   text-align: center;
   color: gold;
+  font-size: 20px;
 }
 
+.index-button{
+  text-align: center;
+}
+
+.movie-heading{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.movie-button{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.movie-iframe{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px
+}
 /* LOGIN AND SIGN UP PAGE */
 
 .login {
@@ -174,7 +197,8 @@ span {
   transition: 0.25s;
 }
 .box input[type="reset"],
-.box input[type="submit"] {
+.box input[type="submit"],
+.box input[type="button"] {
   border: 0;
   background: none;
   display: block;
@@ -195,6 +219,7 @@ span {
   background-color: mediumblue;
   color: white;
 }
+.box input[type="button"]:hover,
 .box input[type="submit"]:hover {
   background-color: gold;
   color: black;
