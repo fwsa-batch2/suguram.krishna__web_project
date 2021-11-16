@@ -192,24 +192,23 @@ span {
   padding: 14px 10px;
   width: 200px;
   outline: none;
-  color: #F2D64B;
+  color: #f2d64b;
   border-radius: 24px;
   transition: 0.25s;
   appearance: textfield;
 }
 
-
-.booking-heading{
+.booking-heading {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.booking-box{
+.booking-box {
   text-align: center;
   margin-left: 500px;
   width: 500px;
 }
-.booking-box .show{
+.booking-box .show {
   color: white;
 }
 .booking-box select[type="option"],
@@ -218,12 +217,30 @@ span {
   background: none;
   display: block;
   margin: 20px auto;
+  font-size: 18px;
   text-align: center;
   border: 2px solid;
   padding: 14px 10px;
   width: 200px;
   outline: none;
-  color: #F2D64B;
+  color: #f2d64b;
+  border-radius: 24px;
+  transition: 0.25s;
+  appearance: textfield;
+}
+
+.booking-box input[type="submit"]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  font-size: 18px;
+  text-align: center;
+  border: 2px solid;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: gold;
   border-radius: 24px;
   transition: 0.25s;
   appearance: textfield;
@@ -253,11 +270,19 @@ span {
   color: white;
 }
 .box input[type="button"]:hover,
-.box input[type="submit"]:hover {
+.box input[type="submit"]:hover{
+  background-color: gold;
+  color: black
+}
+
+.booking-box input[type="submit"]:hover{
   background-color: gold;
   color: black;
 }
 
+.booking-box input[type="submit"]:focus,
+.booking-box select[type="option"]:focus,
+.booking-box input[type="number"]:focus,
 .box input[type="name"]:focus,
 .box input[type="text"]:focus,
 .box input[type="email"]:focus,
