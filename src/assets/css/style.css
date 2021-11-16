@@ -8,7 +8,7 @@
 
 body {
   background-color: black;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 li,
 a,
@@ -119,7 +119,7 @@ span {
   text-align: center;
 }
 
-.lang-heading{
+.lang-heading {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -151,26 +151,26 @@ span {
   font-size: 20px;
 }
 
-.index-button{
+.index-button {
   text-align: center;
 }
 
-.movie-heading{
+.movie-heading {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 30px;
 }
 
-.movie-button{
+.movie-button {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.movie-iframe{
+.movie-iframe {
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 /* LOGIN AND SIGN UP PAGE */
 
@@ -192,10 +192,41 @@ span {
   padding: 14px 10px;
   width: 200px;
   outline: none;
-  color: gold;
+  color: #F2D64B;
   border-radius: 24px;
   transition: 0.25s;
+  appearance: textfield;
 }
+
+
+.booking-heading{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.booking-box{
+  text-align: center;
+}
+.booking-box .show{
+  color: white;
+}
+.booking-box select[type="option"],
+.booking-box input[type="number"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: #F2D64B;
+  border-radius: 24px;
+  transition: 0.25s;
+  /* appearance: textfield; */
+}
+
 .box input[type="reset"],
 .box input[type="submit"],
 .box input[type="button"] {

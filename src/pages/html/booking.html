@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap" rel="stylesheet">
 </head>
 
-<body bgcolor="black">
+<body>
 
     <header>
         <a href="../../../index.html"><img class="logo" src="../../assets/img/pvr.jpg" alt="logo"></a>
@@ -28,56 +28,37 @@
                 Tickets</button></a>
     </header>
 
-    <center>
+    <div class="booking-heading">
         <h1 style="color: rgb(255, 255, 255);">Book Your<span style="color: gold;"> Ticket</span></h1><br>
-        </b>
+    </div>
 
-        <table style="color: gold; border: midnightblue;">
-            <tr>
-                <td style="color: gold;">Name</td>
-                <td><input type="text" name="name" placeholder="Enter Your name" required>
+    <table style="color: gold; border: midnightblue;">
 
-            </tr>
+        <div class="booking-box">
+            <p>Number of Tickets</p>
+            <input type="number" name="" placeholder="Enter The Number Of Tickets" maxlength="1" required>
+            <p class="show">Show Timing</p>
+            <select type="option">
+                <option value="0">Select Show Timing:</option>
+                <option value="1">5:30 AM</option>
+                <option value="2">8:00 AM</option>
+                <option value="3">10:30 AM</option>
+                <option value="4">1:00 AM</option>
+                <option value="5">3:30 AM</option>
+            </select>
+            <p>Location</p>
+            <select type="option">
+                <option value="0">Select Place:</option>
+                <option value="1">GRAND MALL - Velacherry</option>
+                <option value="2">EXPRESS AVENUE - Royapettah</option>
+                <option value="3">VR MALL - Anna Nagar</option>
+                <option value="4">PVR ECR CINEMAS - Uthandi</option>
+                <option value="5">PVR SKYWALK - Aminjikarai - </option>
+            </select>
+        </div>
+    </table>
+    </div>
 
-            <tr>
-                <td>Movie Name</td>
-                <td><input type="text" list="movies" name="moviename" autocomplete="on" placeholder="Movie Name"
-                        required>
-                    <datalist id="movies">
-                        <option value="Annathey">
-                        <option value="Beast">
-                        <option value="Doctor">
-                        <option value="Maanadu">
-                        <option value="Vikram">
-                    </datalist>
-                </td>
-            </tr>
-            <tr>
-                <td>Phone no</td>
-                <td> <input type="tel" name="phone" placeholder="Enter Mobile # here" required>
-            </tr>
-            <tr>
-                <td>Show date and time</td>
-                <td><input type="date" name="showdate"></td>
-            </tr>
-
-            <tr>
-                <td>No of Adults </td>
-                <td><input type="number" name="tickets" id="tickets" min="1" max="10"></td>
-            </tr>
-
-            <tr>
-                <td>No of childrens </td>
-                <td><input type="number" name="childrens" id="childrens" min="1" max="5"></td>
-            </tr>
-
-            <tr>
-                <td><button type="submit" name="Book My Show">Book My Show</button></td>
-                <td><button type="reset" name="reset">Reset</button></td>
-            </tr>
-
-        </table>
-    </center>
 
 </body>
 
