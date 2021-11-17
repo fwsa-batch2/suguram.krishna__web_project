@@ -178,6 +178,8 @@ span {
   text-align: center;
 }
 
+.forget input[type="submit"],
+.forget input[type="email"],
 .box input[type="name"],
 .box input[type="text"],
 .box input[type="email"],
@@ -229,7 +231,7 @@ span {
   appearance: textfield;
 }
 
-.booking-box input[type="submit"]{
+.booking-box input[type="submit"] {
   border: 0;
   background: none;
   display: block;
@@ -269,17 +271,22 @@ span {
   background-color: mediumblue;
   color: white;
 }
-.box input[type="button"]:hover,
-.box input[type="submit"]:hover{
-  background-color: gold;
-  color: black
-}
 
-.booking-box input[type="submit"]:hover{
+
+.forget input[type="submit"]:hover,
+.box input[type="button"]:hover,
+.box input[type="submit"]:hover {
   background-color: gold;
   color: black;
 }
 
+.booking-box input[type="submit"]:hover {
+  background-color: gold;
+  color: black;
+}
+
+.forget input[type="submit"]:focus,
+.forget input[type="email"]:focus,
 .booking-box input[type="submit"]:focus,
 .booking-box select[type="option"]:focus,
 .booking-box input[type="number"]:focus,
@@ -304,4 +311,23 @@ span {
 
 ::placeholder {
   color: gold;
+}
+
+.forget {
+  width: 900px;
+  height: 600px;
+  /* background-color: white; */
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 300px;
+  border-radius: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.forget p {
+  margin: 20px auto;
+  text-align: center;
+  line-height: 1.6;
+  padding: 14px 40px;
 }
