@@ -9,34 +9,30 @@
 
 // }
 
-let signup=[];
+let login=[];
 
 function pageOnLoad(){
-    const user = JSON.parse(localStorage.getItem('userDetails'))
+    const user = JSON.parse(localStorage.getItem('loginDetails'))
     if(user){
-        user=signup;
+        user=login;
     }
 }
 
 
 function submitHandler(){
     event.preventDefault();
-    const name = document.getElementsByName("name").value;
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
-    const confirmPassword = document.getElementById("confirmPassword").value;
 
     const details = {
-        "name": name,
         "email": email,
         "password": password,
-        "confirmPassword": confirmPassword
     }
 
     
     
-    signup.push(details)
-    localStorage.setItem("details", JSON.stringify(signup))
+    login.push(details)
+    localStorage.setItem("details", JSON.stringify(login))
 }
 
 

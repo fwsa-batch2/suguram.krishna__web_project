@@ -1,7 +1,7 @@
 let signup=[];
 
 function pageOnLoad(){
-    const user = JSON.parse(localStorage.getItem('userDetails'))
+    const user = JSON.parse(localStorage.getItem('signUpDetails'))
     if(user){
         user=signup;
     }
