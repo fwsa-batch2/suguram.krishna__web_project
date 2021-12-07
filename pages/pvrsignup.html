@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PVR Sign-Up</title>
-    <link rel="shortcut icon" href="../../assets/img/pvr.jpg">
+    <link rel="shortcut icon" href="../assets/img/pvr.jpg">
     <link rel="stylesheet" href="../../assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap" rel="stylesheet">
 </head>
 
-<body bgcolor="black">
+<body>
 
     <header>
         <a href="../../../index.html"><img class="logo" src="../assets/img/pvr.jpg" alt="logo"></a>
@@ -31,29 +31,30 @@
                 Tickets</button></a>
     </header>
 
-    <center>
-        <b>
-            <h1 style="color: rgb(255, 255, 255);">Welcome To PVR Cinemas <span style="color: gold;"> Sign-Up
-                    Page</span></h1><br>
-        </b>
-    </center>
+
+    <div class="main_heading">
+        <h1 style="color: rgb(255, 255, 255);">Welcome To PVR Cinemas <span style="color: gold;"> Sign-Up Page</span>
+        </h1>
+        <br>
+    </div>
+   
     <div class="login">
-        <form class="box" action="../html/pvrlogin.html">
+        <form class="box" onsubmit="submitHandler()">
             <p>Name</p>
-            <input type="name" name="name" placeholder="Enter Your Name" required>
+            <input type="name" name="name" placeholder="Enter Your Name" id="name" required>
             <p>Email ID</p>
-            <input type="email" name="email" placeholder="Enter Your Email ID" required>
+            <input type="email" name="email" placeholder="Enter Your Email ID" id="email" required>
             <p>Create Password</p>
-            <input type="password" name="password" placeholder="Create Your Password" required>
+            <input type="password" name="password" placeholder="Create Your Password" id="password" required>
             <p>Confirm Password</p>
-            <input type="password" name="confirm-password" placeholder="Confirm Your Password" required>
-            <a href="../html/pvrlogin.html"><input type="submit" name="submit" value="Submit"></a>
+            <input type="password" name="confirm-password" placeholder="Confirm Your Password" id="confirmPassword" required>
+            <input type="submit" name="submit" value="Submit">
             <input type="reset" name="reset" value="Reset">
-            <p id="login-box">Already a Memeber?? Click<a id="login-box-link" href="../html/pvrlogin.html"> here</a></p>
+            <p id="login-box">Already a Memeber?? Click<a id="login-box-link" href="../pages/pvrlogin.html"> here</a></p>
         </form>
     </div>
 
-    <center>
+    <div class="poster">
         <p style="color: gold; font-size: 30px;"><b>Posters</b></p>
         <br>
         <table>
@@ -71,7 +72,10 @@
                 <td><img src="../../assets/img/maanadu.jpeg"></td>
             </tr>
         </table>
-    </center>
+    </div>
+
+
+    <script src="../assets/js/signup.js"></script>
 </body>
 
 </html>
