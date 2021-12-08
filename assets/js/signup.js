@@ -22,24 +22,27 @@ function submitHandler(){
         "confirmPassword": confirmPassword
     }
 
+    const passMatch = check();
+    if(passMatch){
+        signup.push(details)
+        localStorage.setItem("details", JSON.stringify(signup));
+        window.location.href = "../pages/pvrlogin.html"
+    } else{
+        alert("Password Is not matching")
+    }   
     
-    
-    signup.push(details)
-    localStorage.setItem("details", JSON.stringify(signup))
 }
-
 function check(){
     event.preventDefault()
 
     let a = document.getElementById("password").value;
     let b =  document.getElementById("confirmPassword").value;
     if(a==b){
-        console.log("Matching");
-        window.location.href="../pages/pvrlogin.html" 
-        alert("You have created your account successfully")   
+        // console.log("Matching");
+        return true;
     }
     else{
-        console.log("not matching");
-        alert("Sorry :( your password didn't match")
-    }
+    return false;
+    }   
 }
+pageOnLoad()

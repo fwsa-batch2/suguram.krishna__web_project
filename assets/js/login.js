@@ -12,7 +12,7 @@
 let login=[];
 
 function pageOnLoad(){
-    const user = JSON.parse(localStorage.getItem('loginDetails'))
+    const user = JSON.parse(localStorage.getItem('details'))
     if(user){
         user=login;
     }
@@ -20,7 +20,7 @@ function pageOnLoad(){
 
 
 function submitHandler(){
-    event.preventDefault();
+    event.preventDefault();                                                                                                                                     
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 

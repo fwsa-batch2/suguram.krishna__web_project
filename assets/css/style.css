@@ -298,6 +298,7 @@ span {
 .box input[type="date"]:focus {
   width: 280px;
   border-color: white;
+  background-color: transparent;
 }
 
 #login-box {
