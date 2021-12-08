@@ -22,6 +22,14 @@ function submitHandler(){
         "confirmPassword": confirmPassword
     }
 
+    const emailCheck = emailValidation(email);
+
+    if(emailCheck){
+        alert("Email Id is already Registered");
+        return;
+    }
+
+
     const passMatch = check();
     if(passMatch){
         signup.push(details)
@@ -45,4 +53,8 @@ function check(){
     return false;
     }   
 }
+
+function emailValidation(email){
+    
+}                  
 pageOnLoad()
