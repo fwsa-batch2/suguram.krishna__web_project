@@ -11,29 +11,29 @@
 
 let login=[];
 
-function pageOnLoad(){
-    const user = JSON.parse(localStorage.getItem('details'))
-    if(user){
-        user=login;
-    }
-}
+// function pageOnLoad(){
+//     const user = JSON.parse(localStorage.getItem('details'))
+//     if(user){
+//         user=login;
+//     }
+// }
 
 
-function submitHandler(){
-    event.preventDefault();                                                                                                                                     
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+// function submitHandler(){
+//     event.preventDefault();                                                                                                                                     
+//     const email = document.getElementById("email").value;
+//     const password = document.getElementById("password").value;
 
-    const details = {
-        "email": email,
-        "password": password,
-    }
+//     const details = {
+//         "email": email,
+//         "password": password,
+//     }
 
     
     
-    login.push(details)
-    localStorage.setItem("details", JSON.stringify(login))
-}
+//     login.push(details)
+//     localStorage.setItem("details", JSON.stringify(login))
+// }
 
 
 

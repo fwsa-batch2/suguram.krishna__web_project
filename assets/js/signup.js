@@ -10,7 +10,7 @@ function pageOnLoad(){
 
 function submitHandler(){
     event.preventDefault();
-    const name = document.getElementsByName("name").value;
+    const name = document.getElementById("userName").value;
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("confirmPassword").value;
@@ -22,12 +22,11 @@ function submitHandler(){
         "confirmPassword": confirmPassword
     }
 
-    const emailCheck = emailValidation(email);
-
-    if(emailCheck){
-        alert("Email Id is already Registered");
-        return;
-    }
+   const emailValidation = mailCheck(email);
+   if(emailValidation){
+       alert("Mail Id already Exsists")
+       return;
+   }
 
 
     const passMatch = check();
@@ -54,7 +53,25 @@ function check(){
     }   
 }
 
-function emailValidation(email){
-    
-}                  
+function mailCheck(mailInAct){
+    event.preventDefault()
+
+    const userEmail = JSON.parse(localStorage.getItem("details"));
+
+    let alreadyExsists = false;
+
+    for(i=0; i<userEmail.length; i++){
+        const user = userEmail[i];
+        const email = user.email;
+
+        if(mailInAct == email){
+            alreadyExsists = true;
+            break;
+        }
+    }
+
+    return alreadyExsists;
+}
+
+       
 pageOnLoad()

@@ -269,7 +269,7 @@ span {
 }
 
 .box input[type="reset"]:hover {
-  background-color: mediumblue;
+  background-color: red;
   color: white;
 }
 
