@@ -33,7 +33,7 @@
 
 
     <div class="main_heading">
-        <h1 style="color: rgb(255, 255, 255);">Welcome To PVR Cinemas <span style="color: gold;"> Sign-Up Page</span>
+        <h1 style="color: rgb(255, 255, 255);">Sign-Up</h1>
         </h1>
         <br>
     </div>
@@ -41,8 +41,7 @@
     <div class="login">
         <form class="box" onsubmit="submitHandler()">
             <p>Name</p>
-            <input type="name" name="name" placeholder="Enter Your Name" id="userName"
-                title="Please Use only Alphabets" required>
+            <input type="name" name="name" placeholder="Enter Your Name" id="userName" pattern="[a-zA-Z]{3,}" title="Minimum 3 letters" required>
             <p>Email ID</p>
             <input type="email" name="email" placeholder="Enter Your Email ID" id="email" required>
             <p>Create Password</p>
@@ -77,6 +76,7 @@
             </tr>
         </table>
     </div>
+    <footer class="footer">&copy; Designed by Suguram Krishna (SK)</footer>
 
 
     <script src="../assets/js/signup.js"></script>
