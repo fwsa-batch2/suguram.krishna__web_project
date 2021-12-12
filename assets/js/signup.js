@@ -15,10 +15,10 @@ function submitHandler() {
   const confirmPassword = document.getElementById("confirmPassword").value;
 
   const details = {
-    "name": name,
-    "email": email,
-    "password": password,
-    "confirmPassword": confirmPassword,
+    name: name,
+    email: email,
+    password: password,
+    confirmPassword: confirmPassword,
   };
 
   const emailValidation = mailCheck(email);
@@ -53,19 +53,17 @@ function mailCheck(mailInAct) {
   const userEmail = JSON.parse(localStorage.getItem("details"));
   let alreadyExsists = false;
 
-    if(userEmail != null){
-        for (i = 0; i < userEmail.length; i++) {
-            const user = userEmail[i];
-            const email = user.email;
-        
-            if (mailInAct == email) {
-              alreadyExsists = true;
-              break;
-            }
-          }
+  if (userEmail != null) {
+    for (i = 0; i < userEmail.length; i++) {
+      const user = userEmail[i];
+      const email = user.email;
+
+      if (mailInAct == email) {
+        alreadyExsists = true;
+        break;
+      }
     }
-
-
+  }
 
   return alreadyExsists;
 }
