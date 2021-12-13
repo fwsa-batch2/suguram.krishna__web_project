@@ -77,4 +77,14 @@ function mailCheck(mailInAct) {
   return alreadyExsists;
 }
 
+function showPassword(){
+  const checkbox = document.getElementById("passCheckbox");
+  if(checkbox.checked){
+    document.getElementById("password").type="text";
+  }
+  else{
+    document.getElementById("password").type="password";
+  }
+}
+
 pageOnLoad();
