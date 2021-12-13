@@ -15,10 +15,10 @@ function submitHandler() {
   const confirmPassword = document.getElementById("confirmPassword").value;
 
   const details = {
-    name: name,
-    email: email,
-    password: password,
-    confirmPassword: confirmPassword,
+    "name": name,
+    "email": email,
+    "password": password,
+    "confirmPassword": confirmPassword,
   };
 
   const emailValidation = mailCheck(email);
@@ -36,6 +36,15 @@ function submitHandler() {
     alert("Password Is not matching");
   }
 }
+
+function nameValidation(){
+  let userName =  document.getElementById("userName").value
+  if(userName=""){
+    document.getElementById('inner').innerHTML="Username cant be Empty";
+  }
+}
+
+
 function check() {
   event.preventDefault();
 

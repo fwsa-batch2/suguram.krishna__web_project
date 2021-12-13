@@ -41,7 +41,7 @@
     <div class="login">
         <form class="box" onsubmit="submitHandler()">
             <p>Name</p>
-            <input type="name" name="name" placeholder="Enter Your Name" id="userName" pattern="[a-zA-Z]{3,}" title="Minimum 3 letters" required>
+            <input type="name" name="name" placeholder="Enter Your Name" id="userName" pattern="(?=.*[A-Z]).{3,}" title="Name should be atleast three characters and contain only alphabets" required>
             <p>Email ID</p>
             <input type="email" name="email" placeholder="Enter Your Email ID" id="email" required>
             <p>Create Password</p>

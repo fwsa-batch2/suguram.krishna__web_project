@@ -376,3 +376,8 @@ span {
   font-size: 20px;
   font-style: bold;
 }
+
+#invalidError{
+  font-size: 20px;
+  color: red;
+}
