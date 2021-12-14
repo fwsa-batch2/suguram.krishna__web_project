@@ -1,14 +1,19 @@
 let userDetails = [];
 console.log(userDetails);
 
+
 function pageOnLoad() {
   const loginUser = JSON.parse(localStorage.getItem("details"));
+  console.log(loginUser);
   if (loginUser) {
     userDetails = loginUser;
   }
 }
 
-pageOnLoad();
+
+
+pageOnLoad()
+
 
 function submitHandler(){
     event.preventDefault();
@@ -24,10 +29,13 @@ function submitHandler(){
 
         if(userMail !== mailId || userPass !== passwrd){
             // alert("Invalid Login Credentials Or You have to create a Account");
-            document.getElementById('invalidError').innerHTML="Invalid Login Credentials Or You have to create a Account";
+            document.getElementById('invalidError').innerHTML="Invalid Login Credentials";
         }
         else{
-            window.location.replace("../index.html")
+            window.location.href="../index.html";
+            localStorage.setItem("loginedUser", mailId)
         }
     }
+
 }
+
