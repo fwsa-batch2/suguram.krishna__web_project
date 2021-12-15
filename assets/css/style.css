@@ -326,7 +326,7 @@ span {
   height: 600px;
   /* background-color: white; */
   position: absolute;
-  margin-top: 150px;
+  margin-top: 100px;
   margin-left: 300px;
   border-radius: 30px;
   text-align: center;
@@ -334,7 +334,7 @@ span {
 }
 
 .forget p {
-  margin: 20px auto;
+  margin: 10px auto;
   text-align: center;
   line-height: 1.6;
   padding: 14px 40px;

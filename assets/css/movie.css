@@ -1,0 +1,71 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    outline: none;
+    border: none;
+}
+
+body{
+    color: gold;
+}
+
+input{
+    background-color: transparent;
+    border-bottom: 2px solid gold;
+    padding-top: 2%;
+    margin: 2%;
+}
+
+
+.movie_list{
+    margin: 10% auto;
+    width: 100%;
+    padding: 20px;
+
+}
+
+textarea{
+    background-color: transparent;
+    border-bottom: 2px solid gold;
+}
+
+.divinputbox{
+    margin: auto;
+}
+
+.divinputbox div{
+    display:inline-block;
+    padding: 2%;
+}
+
+::placeholder{
+    color: gold;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+#buttonSubmit{
+    width: 200px;
+    border-radius: 20px ;
+}
+
+#buttonReset{
+    width: 200px;
+    border-radius: 20px ;
+    border-bottom: 2px solid red;
+}
+
+
+#buttonSubmit:hover{
+    background-color: gold;
+    box-shadow: 0 0 50px gold;
+}
+
+#buttonReset:hover{
+    background-color: red;
+    box-shadow: 0 0 50px red;
+}
+
+
+
