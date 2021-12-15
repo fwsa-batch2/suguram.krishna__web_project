@@ -6,27 +6,47 @@
 }
 
 body{
+    background-color: black;
     color: gold;
+}
+
+.movieAddingHeading{
+    text-align: center;
+    margin-top: 10%;
 }
 
 input{
     background-color: transparent;
     border-bottom: 2px solid gold;
     padding-top: 2%;
-    margin: 2%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    align-items: center;
 }
 
 
-.movie_list{
-    margin: 10% auto;
-    width: 100%;
-    padding: 20px;
 
+.movie_list{
+    margin-top: 5%;
+    width: 100%;
+    padding: 20px; 
+    /* background-color: red; */
+    align-items: center;
+    margin-left: 15%;
+}
+
+.movie_list input[type="text"]:focus,
+.movie_list input[type="url"]:focus,
+.movie_list textarea:focus{
+    border-bottom: 2px solid white ;
 }
 
 textarea{
     background-color: transparent;
     border-bottom: 2px solid gold;
+    color: white;
 }
 
 .divinputbox{
@@ -48,11 +68,13 @@ textarea{
 #buttonSubmit{
     width: 200px;
     border-radius: 20px ;
+    color: white;
 }
 
 #buttonReset{
     width: 200px;
     border-radius: 20px ;
+    color: white;
     border-bottom: 2px solid red;
 }
 
@@ -60,11 +82,14 @@ textarea{
 #buttonSubmit:hover{
     background-color: gold;
     box-shadow: 0 0 50px gold;
+    color: red;
+
 }
 
 #buttonReset:hover{
     background-color: red;
     box-shadow: 0 0 50px red;
+    color: yellow;
 }
 
 
