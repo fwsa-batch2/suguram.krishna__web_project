@@ -33,11 +33,14 @@
         <form onsubmit="submitHandler()">
             <p>Forget Password???<br>No Issues just chill out and type your Email Id in the Box we will send you the
                 password reset link</p>
-            <input type="email" placeholder="Enter Your Mail Id" required>
+            <p id="invalidError"></p>
+            <input type="email" id="email" placeholder="Enter Your Mail Id" required>
             <input type="submit" name="submit" value="Submit">
         </form>
     </div>
+
     <footer class="footer">&copy; Designed by Suguram Krishna (SK)</footer>
+    <script src="./../assets/js/forgot.js"></script>
 </body>
 
 </html>

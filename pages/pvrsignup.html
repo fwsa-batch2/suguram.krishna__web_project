@@ -40,15 +40,15 @@
 
     <div class="login">
         <form class="box" onsubmit="submitHandler()">
-            <!-- <p>Name</p> -->
-            <input type="name" name="name" placeholder="Enter Your Name" id="userName" pattern="(?=.*[A-Z]).{3,}"
+            <!-- <p>Name</p>pattern="(?=.*[A-Z]).{3,}" -->
+            <input type="name" name="name" placeholder="Enter Your Name" id="userName" pattern="[A-Za-z]{3,16}"
                 title="Name should be start with Caps atleast three characters and contain only alphabets" required>
             <!-- <p>Email ID</p> -->
             <input type="email" name="email" placeholder="Enter Your Email ID" id="email" required>
             <!-- <p>Create Password</p> -->
             <input type="password" name="password" placeholder="Create Your Password" id="password" minlength="8"
                 required>
-                <input type="checkbox" id="passCheckbox" onclick="showPassword()"><span id="showpass">Show Password</span>
+            <input type="checkbox" id="passCheckbox" onclick="showPassword()"><span id="showpass">Show Password</span>
             <!-- <p>Confirm Password</p> -->
             <input type="password" name="confirm-password" placeholder="Confirm Your Password" id="confirmPassword"
                 minlength="8" required>
