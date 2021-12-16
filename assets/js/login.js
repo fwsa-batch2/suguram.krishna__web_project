@@ -30,7 +30,7 @@ function submitHandler(){
         if(userMail !== mailId || userPass !== passwrd){
             // alert("Invalid Login Credentials Or You have to create a Account");
             document.getElementById('invalidError').innerHTML="Invalid Login Credentials";
-            return
+            
         }
         else{
             window.location.href="../index.html";
