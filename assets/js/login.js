@@ -28,8 +28,8 @@ function submitHandler(){
         const passwrd = userValues.password;
 
         if(userMail !== mailId || userPass !== passwrd){
-            // alert("Invalid Login Credentials Or You have to create a Account");
-            document.getElementById('invalidError').innerHTML="Invalid Login Credentials";
+            alert("Invalid Login Credentials Or You have to create a Account");
+            // document.getElementById('invalidError').innerHTML="Invalid Login Credentials";
             
         }
         else{

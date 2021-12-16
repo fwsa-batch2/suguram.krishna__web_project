@@ -10,7 +10,9 @@ function pageOnLoad() {
 function submitHandler() {
   event.preventDefault();
   const name = document.getElementById("userName").value;
-  const email = document.getElementById("email").value;
+  const useremail = document.getElementById("email").value;
+  const email = useremail.toLowerCase();
+  console.log(email);
   const password = document.getElementById("password").value;
   const confirmPassword = document.getElementById("confirmPassword").value;
 
