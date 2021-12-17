@@ -47,7 +47,7 @@ function isUserDetailExist(userMailId, userPassword) {
       const userEmail = valuesInArray.email;
       const userPass = valuesInArray.password;
 
-      if (userMailId === userEmail && userPassword === userPass) {
+      if (userMailId == userEmail && userPassword == userPass) {
 
           isExist = true;
           break;
