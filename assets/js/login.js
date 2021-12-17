@@ -7,7 +7,6 @@ function pageOnLoad() {
   if (loginUser  !== null) {
     userDetails = loginUser;
   }
-
   console.log(loginUser);
 }
 
@@ -19,6 +18,7 @@ function submitHandler() {
   const userMailId = document.getElementById("email").value;
   console.log(userMailId)
   const userPass = document.getElementById("password").value;
+  console.log(userPass);
 
 
   let isDetailExist = isUserDetailExist(userMailId, userPass);
@@ -49,18 +49,15 @@ function isUserDetailExist(userMailId, userPassword) {
       const userPass = valuesInArray.password;
       console.log(userPass);
       if (userMailId == userEmail && userPassword == userPass) {
-
           isExist = true;
           break;
       }
       else {
           isExist = false;
-
       }
   }
   return isExist;
 }
-
 
 
 function showPassword(){
