@@ -391,11 +391,21 @@ span {
   color: red;
 }
 
+
 .divinputbox div{
   display:inline-block;
   /* width:130px; */
 }
 
+
 #showpass{
   font-size: 18px;
+}
+
+.movieInfo{
+  background-color: red;
+  width: 100%;
+  height: 150px;
+  margin-top: 10px;
+  border-radius: 28px;
 }

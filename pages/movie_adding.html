@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Movie</title>
+    <link rel="stylesheet" href="./../assets/css/movie.css">
+    <link rel="shortcut icon" href="../../assets/img/pvr.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="../../../index.html"><img class="logo" src="../../assets/img/pvrbg.png" alt="logo"></a>
+        <p>Welcome Admin</p>
+    </header>
+    <div class="movieAddingHeading">
+        <p>MOVIE ADDING PAGE</p>
+    </div>
+    <div class="movie_list">
+        <form class="box" onsubmit="submitHandler()">
+            <input type="text" placeholder="Movie Name" id="movieName" required>
+
+            <input type="text" placeholder="Hero Name" id="heroName" required>
+
+            <input type="text" placeholder="Director Name" id="directorName" required>
+            <br>
+            <input type="url" placeholder="Movie Image Link" id="movieImgLink" required>
+
+            <input type="url" placeholder="Movie Trailer Link" id="movieTrailerLink" required>
+
+            <label>Movie Description<span><textarea id="movieDescription"></textarea></span></label>
+
+
+            <div class="divinputbox">
+                <div><input type="submit" id="buttonSubmit" name="Add" value="Submit"></div>
+                <div><input type="reset" id="buttonReset" name="reset" value="Reset"></div>
+            </div>
+    </div>
+
+    <script src="./../assets/js/movie_adding.js"></script>
+    </form>
+</body>
+
+</html>

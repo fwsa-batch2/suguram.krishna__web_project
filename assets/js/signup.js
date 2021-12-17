@@ -83,9 +83,11 @@ function showPassword(){
   const checkbox = document.getElementById("passCheckbox");
   if(checkbox.checked){
     document.getElementById("password").type="text";
+    document.getElementById("confirmPassword").type="text";
   }
   else{
     document.getElementById("password").type="password";
+    document.getElementById("confirmPassword").type="password";
   }
 }
 

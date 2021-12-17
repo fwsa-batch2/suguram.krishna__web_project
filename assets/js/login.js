@@ -30,12 +30,22 @@ function submitHandler(){
         if(userMail !== mailId || userPass !== passwrd){
             alert("Invalid Login Credentials Or You have to create a Account");
             // document.getElementById('invalidError').innerHTML="Invalid Login Credentials";
-            
+            return;
         }
         else{
             window.location.href="../index.html";
             localStorage.setItem("loginedUser", mailId)
         }
     }
+}
+
+function showPassword(){
+  const checkbox = document.getElementById("passCheckbox");
+  if(checkbox.checked){
+    document.getElementById("password").type="text";
+  }
+  else{
+    document.getElementById("password").type="password";
+  }
 }
 

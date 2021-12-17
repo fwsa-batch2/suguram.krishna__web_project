@@ -29,7 +29,7 @@
             <a class="button" href="./booking.html"><button>Book
                     Tickets</button></a>
         </header>
-  <br><br>
+        <br><br>
         <div class="main_heading">
             <h1 style="color: rgb(255, 255, 255);">Welcome To PVR Cinemas <span style="color: gold;"> Login Page</span>
             </h1>
@@ -40,7 +40,12 @@
             <form class="box" onsubmit="submitHandler()">
                 <p id="invalidError"></p>
                 <input type="email" name="" id="email" placeholder="Enter Your Email ID" required>
-                <input type="password" id="password" name="" placeholder="Enter Your Password" minlength="8" required>
+                <input type="password" id="password" placeholder="Enter Your Password" minlength="8" maxlength="10"
+                    pattern="[A-Za-z0-9].{8,12}"
+                    title="Password must be contain atleast 8 characters and maximum 10 characters it should contain atleast one Upper case letter"
+                    required>
+                <input type="checkbox" id="passCheckbox" onclick="showPassword()"><span id="showpass">Show
+                    Password</span>
                 <input type="submit" name="submit" value="Submit">
                 <p id="login-box">Forget Password?<a id="login-box-link" href="./forget.html"> Click here</a></span></p>
                 <p id="login-box">New To the Our Site Sign Up<a id="loginGood Evening mam, my c vbnm-box-link"
@@ -54,7 +59,6 @@
 
 
 
-    </body>
     </body>
 
     </html>
