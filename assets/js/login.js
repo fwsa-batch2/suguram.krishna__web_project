@@ -11,7 +11,7 @@ function pageOnLoad() {
 }
 
 
-function isUserDetailExist(userMailId, userPassword) {
+function submitHandler(userMailId, userPassword) {
     event.preventDefault();
     let isExist = false;
     const lengthOfArray = userDetails.length;
