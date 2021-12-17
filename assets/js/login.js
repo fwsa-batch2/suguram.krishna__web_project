@@ -4,15 +4,11 @@ console.log(userDetails);
 
 function pageOnLoad() {
   const loginUser = JSON.parse(localStorage.getItem("details"));
-  console.log(loginUser);
-  if (loginUser) {
+  if (loginUser  !== null) {
     userDetails = loginUser;
   }
+
 }
-
-
-
-pageOnLoad()
 
 
 function submitHandler(){
@@ -29,6 +25,7 @@ function submitHandler(){
 
         if(userMail !== mailId || userPass !== passwrd){
             alert("Invalid Login Credentials Or You have to create a Account");
+            return null;
             // document.getElementById('invalidError').innerHTML="Invalid Login Credentials";
         }
         else{
@@ -48,3 +45,5 @@ function showPassword(){
   }
 }
 
+
+pageOnLoad()
