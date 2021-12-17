@@ -18,10 +18,10 @@ function submitHandler() {
 
   const userMailId = document.getElementById("email").value;
   console.log(userMailId)
-  const passWord = document.getElementById("password").value;
+  const userPass = document.getElementById("password").value;
 
 
-  let isDetailExist = isUserDetailExist(userMailId, passWord);
+  let isDetailExist = isUserDetailExist(userMailId, userPass);
   if (isDetailExist !== true) {
       document.getElementById("invalidError").innerText = "Invalid login credentials";
       return null;
@@ -45,8 +45,9 @@ function isUserDetailExist(userMailId, userPassword) {
     for (let i = 0; i < lengthOfArray; i++) {
       const valuesInArray = userDetails[i];
       const userEmail = valuesInArray.email;
+      console.log(userEmail);
       const userPass = valuesInArray.password;
-
+      console.log(userPass);
       if (userMailId == userEmail && userPassword == userPass) {
 
           isExist = true;
