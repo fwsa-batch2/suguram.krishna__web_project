@@ -11,29 +11,32 @@ function pageOnLoad() {
 }
 
 
-function submitHandler(){
+function isUserDetailExist(userMailId, userPassword) {
     event.preventDefault();
+    let isExist = false;
+    const lengthOfArray = userDetails.length;
 
-    const userMail = document.getElementById("email").value;
-    const userPass = document.getElementById("password").value;
+    for (let i = 0; i < lengthOfArray; i++) {
+      const valuesInArray = userDetails[i];
+      const userEmail = valuesInArray.email;
+      const userPass = valuesInArray.password;
+      console.log(userEmail);
+      console.log(userPass);
 
+      if (userMailId === userEmail && userPassword === userPass) {
 
-    for(let i=0; i<userDetails.length; i++){
-        const userValues = userDetails[i];
-        const mailId = userValues.email;
-        const passwrd = userValues.password;
+          isExist = true;
+          break;
+      }
+      else {
+          isExist = false;
 
-        if(userMail !== mailId || userPass !== passwrd){
-            alert("Invalid Login Credentials Or You have to create a Account");
-            return null;
-            // document.getElementById('invalidError').innerHTML="Invalid Login Credentials";
-        }
-        else{
-            window.location.href="../index.html";
-            localStorage.setItem("loginedUser", mailId)
-        }
-    }
+      }
+  }
+  return isExist;
 }
+
+
 
 function showPassword(){
   const checkbox = document.getElementById("passCheckbox");
@@ -47,3 +50,8 @@ function showPassword(){
 
 
 pageOnLoad()
+
+
+
+
+
