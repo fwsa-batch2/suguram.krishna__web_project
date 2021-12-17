@@ -8,6 +8,7 @@ function pageOnLoad() {
     userDetails = loginUser;
   }
 
+  console.log(loginUser);
 }
 
 
@@ -16,6 +17,7 @@ function submitHandler() {
 
 
   const userMailId = document.getElementById("email").value;
+  console.log(userMailId)
   const passWord = document.getElementById("password").value;
 
 
@@ -44,8 +46,6 @@ function isUserDetailExist(userMailId, userPassword) {
       const valuesInArray = userDetails[i];
       const userEmail = valuesInArray.email;
       const userPass = valuesInArray.password;
-      console.log(userEmail);
-      console.log(userPass);
 
       if (userMailId === userEmail && userPassword === userPass) {
 
