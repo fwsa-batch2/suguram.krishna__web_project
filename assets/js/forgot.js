@@ -19,10 +19,11 @@ function submitHandler() {
     const userInput = forgotdetail[i];
     const mailId = userInput.email;
     if(email !== mailId){
-        document.getElementById('invalidError').innerHTML="You dont have a account Please create a account";
+        alert("You dont have a account Please create a account")
     }
     else{
-        window.location.href="./../index.html";
+        // window.location.href="./../index.html";
+        alert("We have sent a Reset mail to your Account")
     }
   }
 }
