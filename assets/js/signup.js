@@ -1,9 +1,9 @@
-let signup = [];
+let movieDetails = [];
 
 function pageOnLoad() {
   const user = JSON.parse(localStorage.getItem("details"));
   if (user != null) {
-    signup = user;
+    movieDetails = user;
   }
 }
 
@@ -31,8 +31,8 @@ function submitHandler() {
 
   const passMatch = check();
   if (passMatch) {
-    signup.push(details);
-    localStorage.setItem("details", JSON.stringify(signup));
+    movieDetails.push(details);
+    localStorage.setItem("details", JSON.stringify(movieDetails));
     window.location.href = "../pages/pvrlogin.html";
   } else {
     alert("Password Is not matching");

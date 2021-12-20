@@ -408,4 +408,21 @@ span {
   height: 150px;
   margin-top: 10px;
   border-radius: 28px;
+  color: white;
+  padding: 10px;
+}
+
+.movieDetails {
+   font-size: 30px;
+   display: inline-block;
+}
+
+.movieNameSpan{
+    padding: 20px; 
+}
+.heroNameSpan{
+  padding: 20px; 
+}
+.directorNameSpan{
+  padding: 20px; 
 }
