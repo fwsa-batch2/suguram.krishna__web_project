@@ -426,3 +426,8 @@ span {
 .directorNameSpan{
   padding: 20px;
 }
+
+.gallery{
+  text-align: center;
+  margin-top: 2%;
+}
