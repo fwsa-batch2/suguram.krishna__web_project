@@ -132,11 +132,11 @@ span {
   text-align: center;
 }
 .image-table {
+  margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
   /* margin-left: 200px;
   margin-right: 200px; */
-  margin: auto;
 }
 
 .image-table td {
@@ -222,7 +222,6 @@ span {
 }
 .booking-box select[type="option"],
 .booking-box input[type="number"] {
-  border: 0;
   background: none;
   display: block;
   margin: 20px auto;
@@ -239,7 +238,6 @@ span {
 }
 
 .booking-box input[type="submit"] {
-  border: 0;
   background: none;
   display: block;
   margin: 20px auto;
@@ -258,7 +256,6 @@ span {
 .box input[type="reset"],
 .box input[type="submit"],
 .box input[type="button"] {
-  border: 0;
   background: none;
   display: block;
   margin: 20px auto;
