@@ -8,7 +8,7 @@ function pageOnLoad() {
 }
 
 
-function submitHandler() {
+function submitHandler(event) {
   event.preventDefault();
   console.group("Adding Movie Details");
   let movieName = document.getElementById("movieName").value;

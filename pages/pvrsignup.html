@@ -39,7 +39,7 @@
     </div>
 
     <div class="login">
-        <form class="box" onsubmit="submitHandler()">
+        <form class="box" onsubmit="submitHandler(event)">
             <!-- <p>Name</p>pattern="(?=.*[A-Z]).{3,}" -->
             <input type="name" name="name" placeholder="Enter Your Name" id="userName" pattern="[A-Za-z]{3,16}"
                 title="Name should be start with Caps atleast three characters and contain only alphabets" required>

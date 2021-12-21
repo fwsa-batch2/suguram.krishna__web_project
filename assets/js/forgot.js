@@ -5,13 +5,13 @@ function pageOnLoad() {
   const forgetPass = JSON.parse(localStorage.getItem("details"));
   console.log(forgetPass);
   if (forgetPass) {
-    forgotdetail = forgetPass;
+    let forgotdetail = forgetPass;
   }
 }
 
 pageOnLoad();
 
-function submitHandler() {
+function submitHandler(event) {
   event.preventDefault();
 
   const email = document.getElementById("email").value;

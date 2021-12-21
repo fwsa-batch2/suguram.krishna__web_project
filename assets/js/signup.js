@@ -7,7 +7,7 @@ function pageOnLoad() {
   }
 }
 
-function submitHandler() {
+function submitHandler(event) {
   event.preventDefault();
   const name = document.getElementById("userName").value;
   const useremail = document.getElementById("email").value;
