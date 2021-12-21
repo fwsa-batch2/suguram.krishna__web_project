@@ -3,7 +3,7 @@ let movieDetails = JSON.parse(localStorage.getItem("details"));
 for(let i of movieDetails){
     let nameOfMovie = i.movieName;
     let nameOFHero = i.heroName;
-    console.log(nameOFHero);
+    // console.log(nameOFHero);
     let nameOfDirector = i.directorName;
     // let linkOfImage = i.movieImageLink;
     // let linkOfTrailer = i.movieTrailerLink;

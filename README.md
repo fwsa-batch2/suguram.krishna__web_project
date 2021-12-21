@@ -21,6 +21,6 @@
 * Both the fields should match to the details already stored even anyone of the field doesn't match it will show an alert
 * If all the fields are matched correctly the user will be redirected to the main page
 
-### MOVIE ADDING
+### MOVIE ADDING LIST
 
-#### ON PROGRESS
+##### ON PROGRESS
