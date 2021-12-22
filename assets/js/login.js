@@ -52,9 +52,6 @@ function isUserDetailExist(userMailId, userPassword) {
           isExist = true;
           break;
       }
-      else {
-          isExist = false;
-      }
   }
   return isExist;
 }
