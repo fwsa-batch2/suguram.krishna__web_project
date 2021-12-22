@@ -64,11 +64,8 @@ function showPassword() {
   else {
     passwordCheckBox.type = "password";
   }
+}
 
-
-  pageOnLoad()
-
-
-
+pageOnLoad()
 
 
