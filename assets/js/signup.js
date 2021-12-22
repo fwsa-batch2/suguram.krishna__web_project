@@ -17,10 +17,10 @@ function submitHandler(event) {
   const confirmPassword = document.getElementById("confirmPassword").value;
 
   const details = {
-    "name": name,
-    "email": email,
-    "password": password,
-    "confirmPassword": confirmPassword,
+    name: name,
+    email: email,
+    password: password,
+    confirmPassword: confirmPassword,
   };
 
   const emailValidation = mailCheck(email);
@@ -39,14 +39,12 @@ function submitHandler(event) {
   }
 }
 
-
 function check() {
- 
   let a = document.getElementById("password").value;
   let b = document.getElementById("confirmPassword").value;
   if (a == b) {
     return true;
-  } 
+  }
 }
 
 function mailCheck(mailInAct) {
@@ -68,15 +66,19 @@ function mailCheck(mailInAct) {
   return alreadyExsists;
 }
 
-function showPassword(){
-  const checkbox = document.getElementById("passCheckbox");
-  if(checkbox.checked){
-    document.getElementById("password").type="text";
-    document.getElementById("confirmPassword").type="text";
-  }
-  else{
-    document.getElementById("password").type="password";
-    document.getElementById("confirmPassword").type="password";
+function showPassword() {
+  const passCheckBox = document.getElementById("password");
+  const confirmPassChackBox = document.getElementById("confirmPassword");
+
+  if (
+    confirmPassChackBox.type === "password" &&
+    passCheckBox.type === "password"
+  ) {
+    passCheckBox.type = "text";
+    confirmPassChackBox.type = "text";
+  } else {
+    passCheckBox.type = "password";
+    confirmPassChackBox.type = "password";
   }
 }
 
