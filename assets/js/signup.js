@@ -39,34 +39,23 @@ function submitHandler(event) {
   }
 }
 
-function nameValidation(){
-  let userName =  document.getElementById("userName").value
-  if(userName=""){
-    document.getElementById('inner').innerHTML="Username cant be Empty";
-  }
-}
-
 
 function check() {
-  event.preventDefault();
-
+ 
   let a = document.getElementById("password").value;
   let b = document.getElementById("confirmPassword").value;
   if (a == b) {
     return true;
-  } else {
-    return false;
-  }
+  } 
 }
 
 function mailCheck(mailInAct) {
-  event.preventDefault();
   const userEmail = JSON.parse(localStorage.getItem("details"));
   let alreadyExsists = false;
 
   if (userEmail != null) {
-    for (i = 0; i < userEmail.length; i++) {
-      const user = userEmail[i];
+    for (let i of userEmail) {
+      const user = i;
       const email = user.email;
 
       if (mailInAct == email) {

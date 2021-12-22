@@ -38,7 +38,6 @@ function submitHandler(event) {
 
 
 function isUserDetailExist(userMailId, userPassword) {
-    event.preventDefault();
     let isExist = false;
     const lengthOfArray = userDetails.length;
 

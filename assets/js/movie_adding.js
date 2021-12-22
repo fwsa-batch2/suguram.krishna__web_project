@@ -17,11 +17,7 @@ function submitHandler(event) {
   let movieImgLink = document.getElementById("movieImgLink").value;
   let movieTrailerLink = document.getElementById("movieTrailerLink").value;
 
-  //    console.log(movieName)
-  //    console.log(heroName)
-  //    console.log(directorName)
-  //    console.log(movieLink)
-  //    console.log(movieTrailerLink)
+
 
   const movieAddingdetails = {
     "movieName": movieName,
