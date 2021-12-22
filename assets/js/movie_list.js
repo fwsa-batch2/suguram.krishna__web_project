@@ -5,7 +5,7 @@ for(let i of movieDetails){
     let nameOFHero = i.heroName;
     // console.log(nameOFHero);
     let nameOfDirector = i.directorName;
-    // let linkOfImage = i.movieImageLink;
+    let linkOfImage = i.movieImageLink;
     // let linkOfTrailer = i.movieTrailerLink;
 
     movie += 
