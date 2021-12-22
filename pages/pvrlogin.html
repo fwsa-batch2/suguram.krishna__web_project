@@ -37,7 +37,7 @@
         </div>
 
         <div class="login">
-            <form class="box" onsubmit="submitHandler()">
+            <form class="box" onsubmit="submitHandler(event)">
                 <p id="invalidError"></p>
                 <input type="email" name="" id="email" placeholder="Enter Your Email ID" pattern="[A-Za-z0-9]+@[a-z]+\.[a-z]{2,}$" required>
                 <input type="password" id="password" placeholder="Enter Your Password" minlength="8" maxlength="10"

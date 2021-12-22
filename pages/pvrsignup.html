@@ -40,19 +40,14 @@
 
     <div class="login">
         <form class="box" onsubmit="submitHandler(event)">
-            <!-- <p>Name</p>pattern="(?=.*[A-Z]).{3,}" -->
             <input type="name" name="name" placeholder="Enter Your Name" id="userName" pattern="[A-Za-z]{3,16}"
                 title="Name should be start with Caps atleast three characters and contain only alphabets" required>
-            <!-- <p>Email ID</p> -->
             <input type="email" name="email" placeholder="Enter Your Email ID" id="email"
                 pattern="[A-Za-z0-9]+@[a-z]+\.[a-z]{2,}$" required>
-            <!-- <p>Create Password</p> -->
             <input type="password" name="password" placeholder="Create Your Password" id="password" minlength="8"
                 maxlength="10"  pattern="[A-Za-z0-9]@$*&#{6,15}$" title="Password must be contain atleast 8 characters and maximum 10 characters it should contain atleast one Upper case letter" required>
-            <!-- <p>Confirm Password</p> -->
             <input type="password" name="confirm-password" placeholder="Confirm Your Password" id="confirmPassword"
                 minlength="8" maxlength="10" pattern="[A-Za-z0-9]@$*&#{6,15}$" title="Password must be contain atleast 8 characters and maximum 10 characters it should contain atleast one Upper case letter" required>
-
             <input type="checkbox" id="passCheckbox" onclick="showPassword()"><span id="showpass">Show Password</span>
             <div class="divinputbox">
                 <div><input type="submit" name="submit" value="Submit"></div>
