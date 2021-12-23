@@ -1,8 +1,104 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+  margin: 0%;
+  padding: 0%;
 }
 
-body{
-    background-color: black;
+body {
+  background-color: black;
+}
+
+.logo {
+  width: 30%;
+}
+.sideBar {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sideBar a {
+  margin-top: 5%;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: gold;
+  display: block;
+}
+
+.sideBar p {
+  color: gold;
+  margin-top: 100%;
+}
+
+em {
+  padding-right: 5%;
+  color: white;
+}
+
+.main {
+  margin-left: 25%;
+  display: flex;
+}
+
+.movieRunning {
+  width: 500px;
+  height: 200px;
+  background-color: rgb(32, 32, 32);
+  /* margin-left: 25%; */
+  margin-top: 10%;
+  text-align: center;
+  color: gold;
+  border-radius: 24px;
+}
+
+.movieRunningPara {
+  font-size: 35px;
+  padding: 10%;
+}
+
+#adminSpan {
+  color: white;
+  font-size: 50px;
+  padding: 5%;
+}
+
+.movieTicketSold {
+  width: 500px;
+  height: 200px;
+  background-color: rgb(32, 32, 32);
+  margin-left: 2%;
+  margin-top: 10%;
+  text-align: center;
+  color: gold;
+  border-radius: 24px;
+}
+
+.movieTicketSoldPara {
+  font-size: 35px;
+  padding: 10%;
+}
+
+.subMain {
+  margin-left: 43%;
+  margin-top: 5%;
+}
+
+.revenueEarned {
+  width: 500px;
+  height: 200px;
+  background-color: rgb(204, 174, 5);
+  text-align: center;
+  color: black;
+  border-radius: 24px;
+}
+
+.revenueEarnedPara {
+  font-size: 35px;
+  padding: 10%;
 }

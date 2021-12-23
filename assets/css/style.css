@@ -430,3 +430,47 @@ span {
   text-align: center;
   margin-top: 2%;
 }
+
+
+.adminLoginMain{
+  margin-top: 10%;
+  align-items: center;
+}
+
+.inputBox{
+  margin-top: 5%;
+  margin-left: 35%;
+}
+
+.sideBar {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sideBar a {
+  margin-top: 5%;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: gold;
+  display: block;
+}
+
+.sideBar p {
+  color: gold;
+  font-size: 25px;
+  margin-top: 100%;
+}
+
+em {
+  padding-right: 5%;
+  color: white;
+}
+
