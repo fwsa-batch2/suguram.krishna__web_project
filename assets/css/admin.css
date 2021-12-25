@@ -57,16 +57,19 @@ em {
   border-radius: 24px;
 }
 
+
 .movieRunningPara {
   font-size: 35px;
   padding: 10%;
 }
+
 
 #adminSpan {
   color: white;
   font-size: 50px;
   padding: 5%;
 }
+
 
 .movieTicketSold {
   width: 500px;
@@ -79,15 +82,18 @@ em {
   border-radius: 24px;
 }
 
+
 .movieTicketSoldPara {
   font-size: 35px;
   padding: 10%;
 }
 
+
 .subMain {
   margin-left: 43%;
   margin-top: 5%;
 }
+
 
 .revenueEarned {
   width: 500px;
@@ -98,7 +104,122 @@ em {
   border-radius: 24px;
 }
 
+
 .revenueEarnedPara {
   font-size: 35px;
   padding: 10%;
+}
+
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: gold;
+  text-decoration: none;
+}
+
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  transition: all0.3s ease 0s;
+  color: rgb(255, 255, 255);
+}
+
+
+.inputBox{
+  margin-top: 5%;
+  margin-left: 35%;
+  width: 500px;
+  background-color: #111;
+  text-align: center;
+  border-radius: 24px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+
+input{
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid gold;
+  padding-top: 2%;
+  color: gold;
+  width: 325px;
+  outline: none;
+  margin-top: 8%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+
+input:focus{
+  border-bottom: 2px solid white;
+  width: 350px;
+  transition: 0.5s;
+
+}
+
+
+.divinputbox input[type="submit"]{
+  border-bottom: 2px solid gold;
+  border-radius: 24px;
+  width: 325px;
+}
+
+.divinputbox input[type="submit"]:hover{
+  border-bottom: 2px solid black;
+  border-radius: 24px;
+  width: 325px;
+  color: black;
+  background: gold;
+  box-shadow: 0 0 50px gold;
+  cursor: pointer;
+}
+
+
+::placeholder{
+  color: gold;
+  font-size: 20px;
+}
+
+
+::placeholder:focus{
+  color: white;
+}
+
+
+.adminPagePara{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 5%;
 }
