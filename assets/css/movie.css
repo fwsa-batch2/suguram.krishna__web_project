@@ -1,110 +1,132 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    outline: none;
-    border: none;
+* {
+  margin: 0%;
+  padding: 0%;
+  outline: none;
+  border: none;
 }
 
-body{
-    background-color: black;
-    color: gold;
-}
-
-
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 10%;
+body {
+  background-color: black;
+  color: gold;
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 30%;
 }
 
-.movieAddingHeading{
-    text-align: center;
-    margin-top: 5%;
+.sideBar {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
 }
 
-input{
-    background-color: transparent;
-    border-bottom: 2px solid gold;
-    padding-top: 2%;
-    color: gold;
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 2%;
-    align-items: center;
+.sideBar a {
+  margin-top: 5%;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: gold;
+  display: block;
 }
 
-
-
-.movie_list{
-    margin-top: 5%;
-    width: 75%;
-    padding: 20px; 
-    /* background-color: red; */
-    align-items: center;
-    margin-left: 15%;
-
+.sideBar p {
+  color: gold;
+  margin-top: 100%;
 }
 
+em {
+  padding-right: 5%;
+  color: white;
+}
+
+.movieAddingHeading {
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 23%;
+  font-size: 30px;
+}
+
+input {
+  background-color: transparent;
+  border-bottom: 2px solid gold;
+  padding-top: 2%;
+  color: gold;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  align-items: center;
+  width: 300px;
+}
+
+.movie_list {
+  margin-top: 5%;
+  width: 75%;
+  padding: 20px;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  margin-left: 23%;
+}
 
 .movie_list input[type="text"]:focus,
 .movie_list input[type="url"]:focus,
-.movie_list textarea:focus{
-    border-bottom: 2px solid white ;
+.movie_list textarea:focus {
+  border-bottom: 2px solid white;
 }
 
-textarea{
-    background-color: transparent;
-    border-bottom: 2px solid gold;
-    color: white;
+textarea {
+  background-color: transparent;
+  border-bottom: 2px solid gold;
+  color: white;
 }
 
-.divinputbox{
-    margin: auto;
+.divinputbox {
+  margin: auto;
 }
 
-.divinputbox div{
-    display:inline-block;
-    padding: 2%;
+.divinputbox div {
+  display: inline-block;
+  padding: 2%;
 }
 
-::placeholder{
-    color: gold;
-    background-color: transparent;
-    outline: none;
-    border: none;
+::placeholder {
+  color: white;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 20px;
 }
 
-#buttonSubmit{
-    width: 200px;
-    border-radius: 20px ;
-    color: white;
+#buttonSubmit {
+  width: 200px;
+  height: 35px;
+  border-radius: 20px;
+  color: white;
 }
 
-#buttonReset{
-    width: 200px;
-    border-radius: 20px ;
-    color: white;
-    border-bottom: 2px solid red;
+#buttonReset {
+  width: 200px;
+  height: 35px;    
+  border-radius: 20px;
+  color: white;
+  border-bottom: 2px solid red;
 }
 
-
-#buttonSubmit:hover{
-    background-color: gold;
-    box-shadow: 0 0 50px gold;
-    color: red;
+#buttonSubmit:hover {
+  background-color: gold;
+  box-shadow: 0 0 50px gold;
+  color: red;
 }
 
-#buttonReset:hover{
-    background-color: red;
-    box-shadow: 0 0 50px red;
-    color: yellow;
+#buttonReset:hover {
+  background-color: red;
+  box-shadow: 0 0 50px red;
+  color: yellow;
 }
-
