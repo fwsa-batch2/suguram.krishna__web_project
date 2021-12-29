@@ -14,5 +14,5 @@ for(let i of movieDetails){
 }
 
 //<p class='movieDetails'>Movie Description:<span class='descriptionSpan'>"+descriptionOfMovie+"</span></p></div>"
-let div = document.getElementById("movieListing");
+let div = document.getElementById("movieInfo");
 div.innerHTML = movie;
