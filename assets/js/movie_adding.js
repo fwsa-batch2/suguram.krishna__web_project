@@ -16,6 +16,7 @@ function submitHandler(event) {
   let directorName = document.getElementById("directorName").value;
   let movieImgLink = document.getElementById("movieImgLink").value;
   let movieTrailerLink = document.getElementById("movieTrailerLink").value;
+  let movieDescription = document.getElementById("movieDescription").value
 
 
 
@@ -25,6 +26,7 @@ function submitHandler(event) {
     "directorName": directorName,
     "movieImageLink": movieImgLink,
     "movieTrailerLink": movieTrailerLink,
+    "movieDescription": movieDescription
   };
 
   movieDetails.push(movieAddingdetails);
