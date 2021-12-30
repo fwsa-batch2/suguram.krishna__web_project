@@ -13,9 +13,10 @@ for (let i of movieDetails) {
     nameOfHero +
     "</span></p><p class='movieDetails'>Director Name:<span class='directorNameSpan'>" +
     nameOfDirector +
-    "</span></p></div>";
+    "</span></p><p class='movieDetails'>Movie Description:<span class='descriptionSpan'>"+
+    descriptionOfMovie +
+    "</span></p></div>"
 }
 
-//<p class='movieDetails'>Movie Description:<span class='descriptionSpan'>"+descriptionOfMovie+"</span></p></div>"
 let div = document.getElementById("movieListing");
 div.innerHTML = movie;
