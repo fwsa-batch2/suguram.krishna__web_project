@@ -6,6 +6,7 @@
 2. SIGN-UP PAGE (Completed)
 3. MOVIE ADDING LIST (On Progress)
 
+
 ### SIGN_UP PAGE
 
 * All inputs fields are mandatory
@@ -16,7 +17,7 @@
 
 ### LOGIN PAGE
 
-* All the input fields are manadatory to login in the account.
+* All the input fields are mandatory to login in the account.
 * Email and Password should be registered already in the localstorage if it doesn't match the user is asked to create a account
 * Both the fields should match to the details already stored even anyone of the field doesn't match it will show an alert
 * If all the fields are matched correctly the user will be redirected to the main page
