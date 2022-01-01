@@ -5,10 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Page</title>
+    <link rel="stylesheet" href="./../assets/css/payment.css">
 </head>
 <body>
-    <div class="main">
-        div
+    <div class="mainDiv">
+        <p class="paymentDetailsTitle">Confirm Your Payment</p>
+        <div class="mainCardDetails">
+            <div class="cardHolderName">
+                <p class="paymentDetailsPara">Card Holder Name</p>
+                <div class="inputBox">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="cvv">
+                <p class="paymentDetailsPara">CVV</p>
+                <div class="inputBox">
+                    <input type="password">
+                </div>
+            </div>
+        </div>
+        <div class="subMainCardDetails">
+            <div class="card-number">
+                <p class="paymentDetailsPara">Card Number</p>
+                <div class="inputBox">
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="expiryDate">
+            <h3>Card Expiry Date</h3>
+            <div class="selectionBox">
+                <div class="year">
+                    <select name="months" id="months">
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                      </select>
+                      <select name="years" id="years">
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                      </select>
+                </div>
+                <div class="cardCompanies">
+                    <img src="./../assets/img/masterCard.png" alt="MasterCard">
+                    <img src="./../assets/img/payPal.png" alt="PayPal">
+                    <img src="./../assets/img/upi.png" alt="UPI">
+                </div>
+            </div>    
+        </div>
+        <a href="">Confirm</a>
     </div>
 </body>
 </html>
