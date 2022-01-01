@@ -11,12 +11,12 @@ function pageOnLoad() {
 function submitHandler(event) {
   event.preventDefault();
   console.group("Adding Movie Details");
-  let movieName = document.getElementById("movieName").value;
-  let heroName = document.getElementById("heroName").value;
-  let directorName = document.getElementById("directorName").value;
-  let movieImgLink = document.getElementById("movieImgLink").value;
-  let movieTrailerLink = document.getElementById("movieTrailerLink").value;
-  let movieDescription = document.getElementById("movieDescription").value
+  let movieName = document.getElementById("movieName").value.toLowerCase();
+  let heroName = document.getElementById("heroName").value.toLowerCase();
+  let directorName = document.getElementById("directorName").value.toLowerCase();
+  let movieImgLink = document.getElementById("movieImgLink").value.toLowerCase();
+  let movieTrailerLink = document.getElementById("movieTrailerLink").value.toLowerCase();
+  let movieDescription = document.getElementById("movieDescription").value.toLowerCase();
 
 
 
@@ -24,10 +24,11 @@ function submitHandler(event) {
     "movieName": movieName,
     "heroName": heroName,
     "directorName": directorName,
-    "movieImageLink": movieImgLink,
+    "movieImgLink": movieImgLink,
     "movieTrailerLink": movieTrailerLink,
     "movieDescription": movieDescription
   };
+
 
   movieDetails.push(movieAddingdetails);
   localStorage.setItem("details", JSON.stringify(movieDetails));
