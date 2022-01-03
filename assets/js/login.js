@@ -3,7 +3,7 @@ console.log(userDetails);
 
 
 function pageOnLoad() {
-  const loginUser = JSON.parse(localStorage.getItem("details"));
+  const loginUser = JSON.parse(localStorage.getItem("signUpDetails"));
   if (loginUser !== null) {
     userDetails = loginUser;
   }
@@ -56,13 +56,17 @@ function isUserDetailExist(userMailId, userPassword) {
 }
 
 
+
 function showPassword() {
-  const passwordCheckBox = document.getElementById("passCheckbox");
-  if (passwordCheckBox.type === "password") {
-    passwordCheckBox.type = "text";
-  }
-  else {
-    passwordCheckBox.type = "password";
+  const passCheckBox = document.getElementById("password");
+  
+
+  if (
+    passCheckBox.type === "password"
+  ) {
+    passCheckBox.type = "text";
+  } else {
+    passCheckBox.type = "password";
   }
 }
 

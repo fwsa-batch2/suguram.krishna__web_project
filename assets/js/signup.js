@@ -1,7 +1,7 @@
 let movieDetails = [];
 
 function pageOnLoad() {
-  const user = JSON.parse(localStorage.getItem("details"));
+  const user = JSON.parse(localStorage.getItem("signUpDetails"));
   if (user != null) {
     movieDetails = user;
   }
@@ -16,7 +16,7 @@ function submitHandler(event) {
   const password = document.getElementById("password").value;
   const confirmPassword = document.getElementById("confirmPassword").value;
 
-  const details = {
+  const signUpDetails = {
     name: name,
     email: email,
     password: password,
@@ -31,8 +31,8 @@ function submitHandler(event) {
 
   const passMatch = check();
   if (passMatch) {
-    movieDetails.push(details);
-    localStorage.setItem("details", JSON.stringify(movieDetails));
+    movieDetails.push(signUpDetails);
+    localStorage.setItem("signUpDetails", JSON.stringify(movieDetails));
     window.location.href = "../pages/pvrlogin.html";
   } else {
     alert("Password Is not matching");
@@ -48,7 +48,7 @@ function check() {
 }
 
 function mailCheck(mailInAct) {
-  const userEmail = JSON.parse(localStorage.getItem("details"));
+  const userEmail = JSON.parse(localStorage.getItem("signUpDetails"));
   let alreadyExsists = false;
 
   if (userEmail != null) {
