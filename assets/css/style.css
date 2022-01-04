@@ -416,6 +416,11 @@ span {
   box-shadow: 1px 1px rgb(255, 255, 255);
   color: white;
   padding: 10px;
+  overflow: scroll;
+}
+
+.movieInfo::-webkit-scrollbar{
+  display: none;
 }
 
 

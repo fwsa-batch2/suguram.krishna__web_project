@@ -70,6 +70,7 @@ input {
   width: 75%;
   padding: 20px;
   align-items: center;
+  position: fixed;
   font-size: 20px;
   color: white;
   margin-left: 23%;
@@ -133,4 +134,6 @@ textarea {
 
 .footer{
   margin-left: 23%;
+  margin-top: 37%;
+  position: fixed ;
 }

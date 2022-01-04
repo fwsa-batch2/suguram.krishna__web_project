@@ -1,7 +1,6 @@
 let userDetails = [];
 console.log(userDetails);
 
-
 function pageOnLoad() {
   const loginUser = JSON.parse(localStorage.getItem("signUpDetails"));
   if (loginUser !== null) {
@@ -10,32 +9,24 @@ function pageOnLoad() {
   console.log(loginUser);
 }
 
-
 function submitHandler(event) {
   event.preventDefault();
 
-
   const userMailId = document.getElementById("email").value;
-  console.log(userMailId)
+  console.log(userMailId);
   const userPass = document.getElementById("password").value;
   console.log(userPass);
 
-
   let isDetailExist = isUserDetailExist(userMailId, userPass);
   if (isDetailExist !== true) {
-    document.getElementById("invalidError").innerText = "Invalid login credentials";
+    document.getElementById("invalidError").innerText =
+      "Invalid login credentials";
     return null;
-
-  }
-  else {
-
+  } else {
     window.location.href = "./../../index.html";
     localStorage.setItem("LoggedInUser", userMailId);
   }
-
-
 }
-
 
 function isUserDetailExist(userMailId, userPassword) {
   let isExist = false;
@@ -55,21 +46,14 @@ function isUserDetailExist(userMailId, userPassword) {
   return isExist;
 }
 
-
-
 function showPassword() {
   const passCheckBox = document.getElementById("password");
-  
 
-  if (
-    passCheckBox.type === "password"
-  ) {
+  if (passCheckBox.type === "password") {
     passCheckBox.type = "text";
   } else {
     passCheckBox.type = "password";
   }
 }
 
-pageOnLoad()
-
-
+pageOnLoad();
