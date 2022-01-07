@@ -33,7 +33,7 @@ function submitHandler(event) {
   movieDetails.push(movieAddingdetails);
   localStorage.setItem("details", JSON.stringify(movieDetails));
 
-  window.location.href="./../../pages/tamilMovieList.html";
+  // window.location.href="./../../pages/tamilMovieList.html";
 
   console.groupEnd("Adding Movie Details");
 }

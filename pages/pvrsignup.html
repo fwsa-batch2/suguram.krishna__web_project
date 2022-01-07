@@ -41,11 +41,11 @@
     <div class="login">
         <form class="box" onsubmit="submitHandler(event)">
             <input type="name" name="name" placeholder="Enter Your Name" id="userName" pattern="[A-Za-z]{3,16}"
-                title="Name should be start with Caps atleast three characters and contain only alphabets" required>
+                title="Name should start with Uppercase and it should contain atleast 3 characters only alphabet" required>
             <input type="email" name="email" placeholder="Enter Your Email ID" id="email"
-                pattern="[A-Za-z0-9]+@[a-z]+\.[a-z]{2,}$" required>
+                pattern="[A-Za-z0-9]+@[a-z]+\.[a-z]{2,}$" title="Enter a valid email address" required>
             <input type="password" name="password" placeholder="Create Your Password" id="password" minlength="8"
-                maxlength="10"  pattern="[A-Za-z0-9]@$*&#{6,15}$" title="Password must be contain atleast 8 characters and maximum 10 characters it should contain atleast one Upper case letter" required>
+                maxlength="10"  pattern="[A-Za-z0-9]@$*&#{6,15}$" title="Password must contain atleast 8 characters and maximum 10 characters it should contain atleast one Upper case letter" required>
             <input type="password" name="confirm-password" placeholder="Confirm Your Password" id="confirmPassword"
                 minlength="8" maxlength="10" pattern="[A-Za-z0-9]@$*&#{6,15}$" title="Password must be contain atleast 8 characters and maximum 10 characters it should contain atleast one Upper case letter" required>
             <input type="checkbox" id="passCheckbox" onclick="showPassword()"><span id="showpass">Show Password</span>

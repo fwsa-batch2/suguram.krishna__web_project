@@ -48,7 +48,7 @@ function onPageLoad(){
   
     let isUsed = false;
   
-    for (i = 0; i < userList.length; i++) {
+    for (let i = 0; i < userList.length; i++) {
   
       const user = userList[i];
       const email = user.email;
@@ -59,7 +59,7 @@ function onPageLoad(){
         break;
       }
     }
-    // console.groupEnd("emailValid");
+    
     return isUsed;
    
   }

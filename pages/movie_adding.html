@@ -30,19 +30,22 @@
     </div>
     <div class="movie_list">
         <form class="box" onsubmit="submitHandler(event)">
-            <input type="text" placeholder="Movie Name" id="movieName" pattern="[A-Za-z0-9 ]+" title="Movie Name can't be Empty" required>
+            <input type="text" placeholder="Movie Name" id="movieName" pattern="[A-Za-z0-9 ]+"
+                title="Movie Name can't be Empty" required>
 
-            <input type="text" placeholder="Hero Name" id="heroName" pattern="[A-Za-z ]+" title="Hero Name can't be Empty" required>
+            <input type="text" placeholder="Hero Name" id="heroName" pattern="[A-Za-z ]+"
+                title="Hero Name can't be Empty" required>
 
-            <input type="text" placeholder="Director Name" id="directorName" pattern="[A-Za-z ]+" title="Director Name can't be Empty" required>
+            <input type="text" placeholder="Director Name" id="directorName" pattern="[A-Za-z ]+"
+                title="Director Name can't be Empty" required>
             <br>
-            <input type="url" placeholder="Movie Image Link" id="movieImgLink" required>
+            <input type="url" placeholder="Movie Image Link" id="movieImgLink" title="Please Enter a Valid URL" required>
 
-            <input type="url" placeholder="Movie Trailer Link" id="movieTrailerLink" required>
+            <input type="url" placeholder="Movie Trailer Link" id="movieTrailerLink" title="Please Enter a Valid URL" required>
 
-            <label>Movie Description<span><textarea id="movieDescription" required></textarea></span></label>
+            <label>Movie Description<span><textarea id="movieDescription" title="Movie Description cant be empty" required></textarea></span></label>
 
-            
+
             <div class="divinputbox">
                 <div><input type="submit" id="buttonSubmit" name="Add" value="Submit"></div>
                 <div><input type="reset" id="buttonReset" name="reset" value="Reset"></div>
