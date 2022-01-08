@@ -10,9 +10,35 @@
 </head>
 
 <body>
-  <div class="seatBooking">
-    <div class="screen"></div>
+  <div class="movie-container">
+    <label>Pick a movie:</label>
+    <select id="movie">
+      <option value="120">Beast (₹120)</option>
+      <option value="120">Doctor (₹120)</option>
+      <option value="120">Annathey (₹120)</option>
+      <option value="120">Vikram (₹120)</option>
+      <option value="120">Maanadu (₹120)</option>
+    </select>
+  </div>
 
+  <ul class="showcase">
+    <li>
+      <div class="seat"></div>
+      <small>N/A</small>
+    </li>
+    <li>
+      <div class="seat selected"></div>
+      <small>Selected</small>
+    </li>
+    <li>
+      <div class="seat occupied"></div>
+      <small>Occupied</small>
+    </li>
+  </ul>
+
+
+  <div class="seatBooking">
+    <div class="screen"><p>SCREEN</p></div>
     <div class="seatRow">
       <div class="seat"></div>
       <div class="seat"></div>

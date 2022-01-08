@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   background-color: black;
   color: #fff;
@@ -12,24 +13,79 @@ body {
   margin: 0;
 }
 
+
 .mainDiv{
   align-items: center;
 }
 
-.screen{
-  width: 500px;
-  height: 200px;
+
+.movie-container select {
   background-color: #fff;
-  margin-bottom: 10%;
+  border: 0;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 30%;
+  padding: 5px 15px 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
+
+
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+
+.showcase {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+
+.showcase li small {
+  margin-left: 2px;
+}
+
+
+.screen{
+  width: 525px;
+  height: 150px;
+  background-color: #fff;
+  color: black;
+  text-align: center;
+  margin-bottom: 10%;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+.screen p{
+  padding-top: 10%;
+  color: black;
+}
+
 
 .seatBooking{
     margin-bottom: 30px;
-    margin-top: 10%;
 }
 
+
 .seat {
-  background-color: gold;
+  background-color: rgb(192, 165, 9);
   height: 20px;
   width: 25px;
   margin: 3px;
@@ -37,11 +93,23 @@ body {
   border-top-right-radius: 10px;
 }
 
+
 .seat:hover{
-  background-color: blue;
+  background-color: wheat;
 }
+
 
 .seatRow{
   display: flex;
   padding: 10px;
+}
+
+
+p.text {
+  margin: 5px 0;
+}
+
+
+p.text span {
+  color: #6feaf6;
 }
