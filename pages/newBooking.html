@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
   <title>Booking Page</title>
   <link rel="stylesheet" href="./../assets/css/seatBooking.css">
 </head>
+
 
 <body>
   <div class="movie-container">
@@ -21,10 +23,11 @@
     </select>
   </div>
 
+
   <ul class="showcase">
     <li>
       <div class="seat"></div>
-      <small>N/A</small>
+      <small>Not Yet Occupied</small>
     </li>
     <li>
       <div class="seat selected"></div>
@@ -38,13 +41,34 @@
 
 
   <div class="seatBooking">
-    <div class="screen"><p>SCREEN</p></div>
+    <div class="screen">
+      <p>SCREEN</p>
+    </div>
     <div class="seatRow">
       <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
+      <div class="seat"></div>
+    </div>
+    <div class="seatRow">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
       <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
@@ -54,7 +78,7 @@
       <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
-      <div class="seat"></div>
+      
       <div class="seat"></div>
     </div>
     <div class="seatRow">
@@ -70,26 +94,8 @@
       <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-    </div>
-    <div class="seatRow">
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
       <div class="seat"></div>
       <div class="seat"></div>
     </div>
@@ -103,13 +109,13 @@
       <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
     </div>
     <div class="seatRow">
       <div class="seat"></div>
@@ -123,9 +129,9 @@
       <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
       <div class="seat"></div>
       <div class="seat"></div>
     </div>
@@ -133,11 +139,11 @@
       <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
-      <div class="seat"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
       <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
@@ -147,6 +153,12 @@
       <div class="seat"></div>
       <div class="seat"></div>
     </div>
+
+    <p class="text">
+      You have selected <span id="count">0</span> seats for a price of $<span id="total">0</span>
+    </p>
 </body>
+
+<script src="./../assets/js/seatbooking.js"></script>
 
 </html>

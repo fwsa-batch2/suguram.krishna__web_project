@@ -83,9 +83,16 @@ body {
     margin-bottom: 30px;
 }
 
+.seat.selected{
+  background-color: gold;
+}
+
+.seat.occupied{
+  background-color: grey;
+}
 
 .seat {
-  background-color: rgb(192, 165, 9);
+  background-color:darkslateblue;
   height: 20px;
   width: 25px;
   margin: 3px;
@@ -95,14 +102,22 @@ body {
 
 
 .seat:hover{
-  background-color: wheat;
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
 
 .seatRow{
   display: flex;
   padding: 10px;
 }
+
+
+
 
 
 p.text {
