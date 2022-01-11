@@ -130,31 +130,29 @@ span {
   font-size: 26px;
   text-align: center;
 }
-.image-table {
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  /* margin-left: 200px;
-  margin-right: 200px; */
+
+
+.poster{
+  display: flex;  
+  flex-wrap: wrap;
+  padding: 50px;
+  justify-content: space-evenly;
 }
 
-.image-table td {
-  padding: 20px;
+
+.poster img{
+  border-radius: 7%;
 }
 
-.image-table table{
-  margin: auto;
-}
 
-.image-table img {
-  border-radius: 24px;
-}
-
-.table-name {
-  text-align: center;
+.movieName{
   color: gold;
-  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
+
+
 
 .index-button {
   text-align: center;
