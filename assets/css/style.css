@@ -129,7 +129,7 @@ span {
   text-align: center;
 }
 
-.poster {
+.moviePosterDiv {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -140,7 +140,7 @@ span {
   padding: 3%;
 }
 
-.poster img {
+.moviePosterDiv img {
   border-radius: 7%;
   height: 300px;
 }

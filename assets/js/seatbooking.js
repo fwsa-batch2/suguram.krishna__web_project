@@ -55,16 +55,18 @@ movieSelection.addEventListener("change", e => {
   bookingSeats();
 });
 
-seatBooking.addEventListener('click', e => {
+seatBooking.addEventListener('click',seatsStatus(event));
+
+function seatsStatus(event){
   if (
-    e.target.classList.contains('seat') &&
-    !e.target.classList.contains('occupied')
+    event.target.classList.contains('seat') &&
+    !event.target.classList.contains('occupied')
   ) {
-    e.target.classList.toggle('selected');
+    event.target.classList.toggle('selected');
 
     bookingSeats();
   }
-});
+}
 
 
 bookingSeats();
