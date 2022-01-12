@@ -8,7 +8,6 @@ function pageOnLoad() {
   console.log(movieInList);
 }
 
-
 let movieDetails = JSON.parse(localStorage.getItem("details"));
 for (let i of movieDetails) {
   let nameOfMovie = i.movieName;
@@ -18,24 +17,31 @@ for (let i of movieDetails) {
   let imageLink = i.movieImgLink;
 
   movie +=
-    `<div class="movieInfo">
-    <div class="posterImg">
-        <img class="movieImage"
-            src="${imageLink}"
-            alt="moviePoster">
-    </div>
-    <div class="movieList">
-        <p class="movieDetails">Movie Name:<span class="movieNameSpan">
-        ${nameOfMovie}</span></p>
-        <p class="movieDetails">Hero Name:<span class="heroNameSpan">
-        ${nameOfHero}</span></p>
-        <p class="movieDetails">Director Name:<span class="directorNameSpan">
-        ${nameOfDirector}</span></p>
-        <p class="movieDetails">Movie Description:<span class="descriptionSpan">
-        ${descriptionOfMovie}</span></p>
-    </div>
-</div>`
+    //     `<div class="movieInfo">
+    //     <div class="posterImg">
+    //         <img class="movieImage"
+    //             src="${imageLink}"
+    //             alt="moviePoster">
+    //     </div>
+    //     <div class="movieList">
+    //         <p class="movieDetails">Movie Name:<span class="movieNameSpan">
+    //         ${nameOfMovie}</span></p>
+    //         <p class="movieDetails">Hero Name:<span class="heroNameSpan">
+    //         ${nameOfHero}</span></p>
+    //         <p class="movieDetails">Director Name:<span class="directorNameSpan">
+    //         ${nameOfDirector}</span></p>
+    //         <p class="movieDetails">Movie Description:<span class="descriptionSpan">
+    //         ${descriptionOfMovie}</span></p>
+    //     </div>
+    // </div>`
+
+    `<div class="imagePoster">
+     <a href="./pages/vikram.html"><img src="${imageLink}" alt="Movie Poster"></a>  
+     <div class="movieName">
+       <p>${nameOfMovie}</p>
+     </div>
+     </div>`;
 }
 
-let div = document.getElementById("movieListing");
-div.innerHTML = movie;
+let div = document.getElementById("poster");
+div.innerHTML += movie;

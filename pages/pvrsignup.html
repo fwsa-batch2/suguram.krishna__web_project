@@ -40,14 +40,19 @@
 
     <div class="login">
         <form class="box" onsubmit="submitHandler(event)">
-            <input type="name" name="name" placeholder="Enter Your Name" id="userName" pattern="[A-Za-z]{3,16}"
-                title="Name should start with Uppercase and it should contain atleast 3 characters only alphabet" required>
+            <input type="name" name="name" placeholder="Enter Your Name" id="userName" pattern="[A-Za-z ]{3,16}"
+                title="Name should start with Uppercase and it should contain atleast 3 characters only alphabet"
+                autofocus required>
             <input type="email" name="email" placeholder="Enter Your Email ID" id="email"
                 pattern="[A-Za-z0-9]+@[a-z]+\.[a-z]{2,}$" title="Enter a valid email address" required>
             <input type="password" name="password" placeholder="Create Your Password" id="password" minlength="8"
-                maxlength="10"  pattern="[A-Za-z0-9]@$*&#{6,15}$" title="Password must contain atleast 8 characters and maximum 10 characters it should contain atleast one Upper case letter" required>
+                maxlength="10" pattern="[A-Za-z0-9]@$*&#{6,15}$"
+                title="Password must contain atleast 8 characters and maximum 10 characters it should contain atleast one Upper case letter"
+                required>
             <input type="password" name="confirm-password" placeholder="Confirm Your Password" id="confirmPassword"
-                minlength="8" maxlength="10" pattern="[A-Za-z0-9]@$*&#{6,15}$" title="Password must be contain atleast 8 characters and maximum 10 characters it should contain atleast one Upper case letter" required>
+                minlength="8" maxlength="10" pattern="[A-Za-z0-9]@$*&#{6,15}$"
+                title="Password must be contain atleast 8 characters and maximum 10 characters it should contain atleast one Upper case letter"
+                required>
             <input type="checkbox" id="passCheckbox" onclick="showPassword()"><span id="showpass">Show Password</span>
             <div class="divinputbox">
                 <div><input type="submit" name="submit" value="Submit"></div>
@@ -55,7 +60,8 @@
             </div>
             <p id="login-box">Already a Memeber?? Click<a id="login-box-link" href="../pages/pvrlogin.html"> here</a>
             </p>
-            <p id="login-box">If you are the Admin Please Click<a id="login-box-link" href="./../pages/loginAdmin.html"> here</a>
+            <p id="login-box">If you are the Admin Please Click<a id="login-box-link" href="./../pages/loginAdmin.html">
+                    here</a>
             </p>
         </form>
     </div>
@@ -63,9 +69,7 @@
     <div class="poster">
         <p style="color: gold; font-size: 30px;"><strong>Posters</strong></p>
         <br>
-        <table>
-            <caption></caption>
-            <th id="galleryImage"></th>
+        <div id="galleryImage">
             <tr>
                 <td><img src="../../assets/img/beast.jpeg" alt="Beast"></td>
                 <td><img src="../../assets/img/doctor.jpeg" alt="Doctor"></td>
@@ -79,7 +83,7 @@
                 <td><img src="../../assets/img/sababathi.jpeg" alt="Sababathi"></td>
                 <td><img src="../../assets/img/maanadu.jpeg" alt="Maanadu"></td>
             </tr>
-        </table>
+        </div>
     </div>
     <footer class="footer">&copy; Designed by Suguram Krishna (SK)</footer>
 
