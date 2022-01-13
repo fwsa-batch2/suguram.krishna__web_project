@@ -122,6 +122,24 @@ span {
   margin-bottom: 20px;
 }
 
+.lang-headingSide{
+  margin-left:50px ;
+  margin-top: 20px;
+  /* margin-bottom: 20px; */
+}
+
+.lang-headingSide p{
+  font-size: 30px;
+  margin-top: 2%;
+}
+
+
+.lang-headingSideSpan{
+  margin-left: 85%;
+  color: gold;
+  font-size: 16px;
+}
+
 .movie-description p {
   color: rgb(255, 255, 255);
   line-height: 1.6;
@@ -137,7 +155,8 @@ span {
 
 .imagePoster {
   align-items: center;
-  padding: 3%;
+  padding-right: 3%;
+  padding-left: 3%;
 }
 
 .moviePosterDiv img {
@@ -511,10 +530,6 @@ em {
   transition: none;
 }
 
-/* .movieInfo img{
-  width: 200px;
-  height: 100px;
-} */
 
 .posterImg img {
   height: 150px;
@@ -527,4 +542,14 @@ em {
   margin-top: 2%;
   margin-left: 23%;
   color: gold;
+}
+
+.tamilMovies{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.movieLang{
+  background-color: red;
 }
