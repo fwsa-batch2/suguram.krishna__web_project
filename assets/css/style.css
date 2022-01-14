@@ -157,7 +157,20 @@ span {
   align-items: center;
   padding-right: 3%;
   padding-left: 3%;
+  position: relative;
+  text-align: center;
+  color: white;
 }
+
+
+.imagePoster:hover + .bottom-left {
+  position: absolute;
+  bottom: 200px;
+  left: 80px;
+  color: gold;
+  display: block;
+}
+
 
 .moviePosterDiv img {
   border-radius: 7%;
@@ -167,8 +180,8 @@ span {
 .movieName p {
   color: gold;
   font-size: 23px;
-  /* text-align: center; */
-  /* margin-left: 10px; */
+  text-align: center;
+  margin-left: 10px;
 }
 
 .beastDetail {
@@ -497,7 +510,7 @@ span {
 
 .sideBar p {
   color: gold;
-  font-size: 25px;
+  font-size: 25px;display: none;
   margin-top: 100%;
 }
 
@@ -507,8 +520,10 @@ em {
 }
 
 .movieListHeadingparatag {
-  margin-left: 25%;
+  font-size: 25px;
 }
+
+
 
 .descriptionSpan {
   margin-left: 10px;
@@ -516,11 +531,11 @@ em {
 
 .movieListHeadingparatag span {
   color: white;
-  margin-left: 75%;
+  margin-left: 85%;
 }
 
 .addButton {
-  background-color: rgb(255, 255, 255);
+  background-color: gold;
   color: #111;
 }
 
@@ -528,6 +543,10 @@ em {
   background-color: gold;
   color: #111;
   transition: none;
+}
+
+.movieLang{
+  margin-left: 2%;
 }
 
 
@@ -539,8 +558,7 @@ em {
 }
 
 .footer_list {
-  margin-top: 2%;
-  margin-left: 23%;
+  margin-top: 15%;
   color: gold;
 }
 
@@ -550,6 +568,22 @@ em {
 }
 
 
-.movieLang{
-  background-color: red;
+.tamilMovies p{
+  color: #f2d64b;
 }
+
+
+.tamilMovies img{
+  margin-top: 20%;
+  border-radius: 7%;
+}
+
+
+.bottom-left {
+  position: absolute;
+  bottom: 200px;
+  left: 80px;
+  color: gold;
+  display: none;
+}
+
