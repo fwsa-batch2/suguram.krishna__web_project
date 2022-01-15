@@ -13,16 +13,15 @@ for (let i of movieDetails) {
   let nameOfMovie = i.movieName;
   let nameOfHero = i.heroName;
   let nameOfDirector = i.directorName;
-  let descriptionOfMovie = i.movieDescription;
   let imageLink = i.movieImgLink;
 
-  movie +=
-    `<div class="imagePoster">
-     <a href="./pages/vikram.html"><img src="${imageLink}" alt="Movie Poster"></a>  
-     <div class="movieName">
-       <p>${nameOfMovie}</p>
-     </div>
-     </div>`;
+  movie += `<div class="imagePoster">
+  <a href="./beast.html"><img src="${imageLink}" alt="Beast"></a>
+  <div class="imageInside"><p>${nameOfMovie}<span class="imageHeroName">${nameOfHero}</span><span class="imageDirectorName">${nameOfDirector}<span></p></div>
+  <div class="movieName">
+      <p>${nameOfMovie}</p>
+  </div>
+</div>`;
 }
 
 let div = document.getElementById("poster");
