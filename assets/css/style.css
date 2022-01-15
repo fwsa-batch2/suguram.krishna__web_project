@@ -149,7 +149,7 @@ span {
 .moviePosterDiv {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .imagePoster {
@@ -166,7 +166,7 @@ span {
   bottom: 200px;
   visibility: visible;
   left: 100px;
-  transition: none;
+  transition: -0.25s;
 }
 
 .imagePoster img:hover {
@@ -178,7 +178,9 @@ span {
   position: absolute;
   bottom: 200px;
   visibility: hidden;
-  left: 20px;
+  left: 100px;
+  transition: none;
+  /* background-color: red; */
 }
 
 .imageInside p {

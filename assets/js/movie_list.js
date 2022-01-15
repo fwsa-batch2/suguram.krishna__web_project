@@ -17,7 +17,8 @@ for (let i of movieDetails) {
 
   movie += `<div class="imagePoster">
   <a href="./beast.html"><img src="${imageLink}" alt="Movie Image"></a>
-  <div class="imageInside"><p>${nameOfMovie}<span class="imageHeroName">${nameOfHero}</span><span class="imageDirectorName">${nameOfDirector}<span></p></div>
+  <div class="imageInside"><p>${nameOfMovie}<span class="imageHeroName">${nameOfHero}</span><span class="imageDirectorName">${nameOfDirector}<span><span><a class="button" href="./newBooking.html"><button>Book
+  Tickets</button></a></span></p></div>
   <div class="movieName">
       <p>${nameOfMovie}</p>
   </div>
