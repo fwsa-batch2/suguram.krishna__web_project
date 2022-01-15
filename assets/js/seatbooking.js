@@ -1,24 +1,27 @@
 const seatBooking = document.querySelector(".seatBooking");
-const seatSelection = document.querySelectorAll(".seatRow .seat:not(.occupied)");
+const seatSelection = document.querySelectorAll(
+  ".seatRow .seat:not(.occupied)"
+);
 const seatCount = document.getElementById("count");
 const toatalAmount = document.getElementById("total");
-const movieSelection = document.getElementById("movie")
+const movieSelection = document.getElementById("movie");
 console.log(movieSelection);
 
 pageOnload();
 
 let ticketPrice = +movieSelection.value;
 
-function movieDetails(movieIndex, moviePrice){
+function movieDetails(movieIndex, moviePrice) {
   localStorage.setItem("selectedMovieIndexValue", movieIndex);
   localStorage.setItem("selectedMoviePrice", moviePrice);
 }
 
-
-function bookingSeats(){
+function bookingSeats() {
   const selectedSeats = document.querySelectorAll(".seatRow .seat.selected");
 
-  const seatsIndex = [...selectedSeats].map(seat => [...seatSelection].indexOf(seat));
+  const seatsIndex = [...selectedSeats].map((seat) =>
+    [...seatSelection].indexOf(seat)
+  );
 
   localStorage.setItem("selectedSeats", JSON.stringify(seatsIndex));
 
@@ -30,43 +33,41 @@ function bookingSeats(){
   movieDetails(movieSelection.selectedIndex, movieSelection.value);
 }
 
-function pageOnload(){
-  const selectedSeats = JSON.parse(localStorage.getItem('selectedSeats'));
-
+function pageOnload() {
+  const selectedSeats = JSON.parse(localStorage.getItem("selectedSeats"));
 
   if (selectedSeats !== null && selectedSeats.length > 0) {
     seatSelection.forEach((seat, index) => {
       if (selectedSeats.indexOf(index) > -1) {
-        seat.classList.add('selected');
+        seat.classList.add("selected");
       }
     });
   }
 
-  const selectedMovieIndexValue = localStorage.getItem('selectedMovieIndexValue');
+  const selectedMovieIndexValue = localStorage.getItem(
+    "selectedMovieIndexValue"
+  );
 
   if (selectedMovieIndexValue !== null) {
     movieSelection.selectedIndex = selectedMovieIndexValue;
   }
 }
 
-movieSelection.addEventListener("change", e => {
+movieSelection.addEventListener("change", (e) => {
   ticketPrice = +e.target.value;
   setMovieData(e.target.selectedIndex, e.target.value);
   bookingSeats();
 });
 
-seatBooking.addEventListener('click',seatsStatus(event));
-
-function seatsStatus(event){
+seatBooking.addEventListener("click", (e) => {
   if (
-    event.target.classList.contains('seat') &&
-    !event.target.classList.contains('occupied')
+    e.target.classList.contains("seat") &&
+    !e.target.classList.contains("occupied")
   ) {
-    event.target.classList.toggle('selected');
+    e.target.classList.toggle("selected");
 
     bookingSeats();
   }
-}
-
+});
 
 bookingSeats();
