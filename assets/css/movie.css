@@ -65,6 +65,7 @@ input {
   width: 300px;
 }
 
+
 .movie_list {
   margin-top: 5%;
   width: 75%;
@@ -76,11 +77,22 @@ input {
   margin-left: 23%;
 }
 
+
+.firstPartInput{
+  margin-left: 20%;
+  justify-content: space-evenly;
+}
+
+.secondPartInput{
+  margin-left: 20%;
+}
+
 .movie_list input[type="text"]:focus,
 .movie_list input[type="url"]:focus,
 .movie_list textarea:focus {
   border-bottom: 2px solid white;
 }
+
 
 textarea {
   background-color: transparent;
@@ -88,14 +100,17 @@ textarea {
   color: white;
 }
 
+
 .divinputbox {
   margin: auto;
 }
+
 
 .divinputbox div {
   display: inline-block;
   padding: 2%;
 }
+
 
 ::placeholder {
   color: white;
@@ -105,12 +120,14 @@ textarea {
   font-size: 20px;
 }
 
+
 #buttonSubmit {
   width: 200px;
   height: 35px;
   border-radius: 20px;
   color: white;
 }
+
 
 #buttonReset {
   width: 200px;
@@ -120,11 +137,13 @@ textarea {
   border-bottom: 2px solid red;
 }
 
+
 #buttonSubmit:hover {
   background-color: gold;
   box-shadow: 0 0 50px gold;
   color: red;
 }
+
 
 #buttonReset:hover {
   background-color: red;
@@ -132,8 +151,10 @@ textarea {
   color: yellow;
 }
 
+
 .footer{
   margin-left: 23%;
   margin-top: 37%;
   position: fixed ;
 }
+

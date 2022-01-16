@@ -165,6 +165,7 @@ span {
   position: absolute;
   bottom: 200px;
   visibility: visible;
+  text-align: center;
   left: 100px;
   transition: -0.25s;
 }
@@ -186,11 +187,11 @@ span {
 .imageInside p {
   color: gold;
   font-size: 30px;
-  /* display: block; */
 }
 
 .imageInside span {
   color: gold;
+  
   margin-top: 20px;
   display: block;
 }

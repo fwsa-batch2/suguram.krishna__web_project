@@ -30,16 +30,21 @@
     </div>
     <div class="movie_list">
         <form class="box" onsubmit="submitHandler(event)">
-            <input type="text" placeholder="Movie Name" id="movieName" pattern="[A-Za-z0-9 ]+"
-                title="Movie Name can't be Empty" required>
+            <div class="firstPartInput">
+                <input type="text" placeholder="Movie Name" id="movieName" pattern="[A-Za-z0-9 ]+"
+                    title="Movie Name can't be Empty" autofocus required>
 
-            <input type="text" placeholder="Hero Name" id="heroName" pattern="[A-Za-z ]+"
-                title="Hero Name can't be Empty" required>
+                <input type="text" placeholder="Hero Name" id="heroName" pattern="[A-Za-z ]+"
+                    title="Hero Name can't be Empty" required>
+            </div>
 
-            <input type="text" placeholder="Director Name" id="directorName" pattern="[A-Za-z ]+"
-                title="Director Name can't be Empty" required>
-            <br>
-            <input type="url" placeholder="Movie Image Link" id="movieImgLink" title="Please Enter a Valid URL" required>
+            <div class="secondPartInput">
+                <input type="text" placeholder="Director Name" id="directorName" pattern="[A-Za-z ]+"
+                    title="Director Name can't be Empty" required>
+
+                <input type="url" placeholder="Movie Image Link" id="movieImgLink" title="Please Enter a Valid URL"
+                    required>
+            </div>
 
             <input type="url" placeholder="Movie Trailer Link" id="movieTrailerLink" title="Please Enter a Valid URL" required>
 
