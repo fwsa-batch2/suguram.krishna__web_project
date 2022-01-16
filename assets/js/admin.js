@@ -15,7 +15,7 @@ function submitHandler(event){
     }
 }
 
-function adminRedirection(){
+function adminRedirection(event){
     event.preventDefault()
     const adminId = "admin"
     const adminPass = "admin"
