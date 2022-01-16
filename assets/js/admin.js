@@ -14,3 +14,20 @@ function submitHandler(event){
         alert("Invalid Admin Credentials")
     }
 }
+
+function adminRedirection(){
+    event.preventDefault()
+    const adminId = "admin"
+    const adminPass = "admin"
+    
+    let adminIdInput = document.getElementById("adminId").value;
+    let adminPassInput = document.getElementById("adminPass").value;
+
+    if(adminId === adminIdInput && adminPass === adminPassInput){
+        alert("Welcome Admin");
+        window.location.href="./../../pages/movie_adding.html"
+    }
+    else{
+        alert("Invalid Admin Credentials")
+    }
+}

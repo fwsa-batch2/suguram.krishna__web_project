@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="./../assets/css/admin.css">
+</head>
+
+<body>
+    <header>
+        <a href="../../../index.html"><img class="logo" src="../assets/img/pvrbg.png" alt="logo"></a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="../../../index.html">HOME</a></li>
+                <li><a href="./pvrsignup.html">SIGN-UP</a></li>
+                <li><a href="./about.html">ABOUT-US</a>
+                <li><a href="./pvrlocation.html">LOCATION</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="adminLoginMain">
+        <div class="inputBox">
+            <form onsubmit="submitHandler(event)">
+                <p class="adminPagePara">Admin Login Page</p>
+                <input type="text" id="adminId" placeholder="Enter Your Admin Username" required>
+                <br>
+                <input type="password" id="adminPass" placeholder="Enter Your Admin Password" required>
+                <br>
+                <div class="divinputbox">
+                    <div><input type="submit" id="buttonSubmit" name="Add" value="Submit" onclick="adminRedirection()"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">&copy; Designed by Suguram Krishna (SK)</footer>
+    <script src="./../assets/js/admin.js"></script>
+</body>
+
+</html>

@@ -33,11 +33,11 @@ function submitHandler(event) {
   }
 
   function movieNameCheck(nameOfMovie) {
-    const movieName = JSON.parse(localStorage.getItem("details"));
+    const movieNameGetting = JSON.parse(localStorage.getItem("details"));
     let alreadyExsists = false;
 
-    if (movieName != null) {
-      for (let i of movieName) {
+    if (movieNameGetting != null) {
+      for (let i of movieNameGetting) {
         const movieList = i;
         const movieCheck = movieList.movieName;
 
