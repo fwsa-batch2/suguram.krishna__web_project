@@ -27,8 +27,6 @@
                 </li>
             </ul>
         </nav>
-        <a class="button" href="./booking.html"><button>Book
-                Tickets</button></a>
     </header>
 
 
@@ -40,7 +38,7 @@
 
     <div class="login">
         <form class="box" onsubmit="submitHandler(event)">
-            <input type="name" name="name" placeholder="Enter Your Name" id="userName" pattern="[A-Za-z ]{3,16}"
+            <input type="name" name="name" placeholder="Enter Your Name" id="userName" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$"
                 title="Name should start with Uppercase and it should contain atleast 3 characters only alphabet"
                 autofocus required>
             <input type="email" name="email" placeholder="Enter Your Email ID" id="email"
@@ -66,25 +64,6 @@
         </form>
     </div>
 
-    <div class="poster">
-        <p style="color: gold; font-size: 30px;"><strong>Posters</strong></p>
-        <br>
-        <div id="galleryImage">
-            <tr>
-                <td><img src="../../assets/img/beast.jpeg" alt="Beast"></td>
-                <td><img src="../../assets/img/doctor.jpeg" alt="Doctor"></td>
-                <td><img src="../../assets/img/annathey.jpeg" alt="Annathey"></td>
-                <td><img src="../../assets/img/valimai.jpeg" alt="Valimai"></td>
-            </tr>
-
-            <tr>
-                <td><img src="../../assets/img/vikram.jpeg" alt="Vikram"></td>
-                <td><img src="../../assets/img/enemy.jpeg" alt="Enemy"></td>
-                <td><img src="../../assets/img/sababathi.jpeg" alt="Sababathi"></td>
-                <td><img src="../../assets/img/maanadu.jpeg" alt="Maanadu"></td>
-            </tr>
-        </div>
-    </div>
     <footer class="footer">&copy; Designed by Suguram Krishna (SK)</footer>
 
 

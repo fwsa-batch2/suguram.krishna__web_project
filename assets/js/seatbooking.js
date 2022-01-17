@@ -1,3 +1,5 @@
+alert("Please Select the Movie You want To Watch")
+
 const seatBooking = document.querySelector(".seatBooking");
 const seatSelection = document.querySelectorAll(
   ".seatRow .seat:not(.occupied)"
@@ -7,7 +9,7 @@ const toatalAmount = document.getElementById("total");
 const movieSelection = document.getElementById("movie");
 console.log(movieSelection);
 
-pageOnload();
+gettingAndDisplaying();
 
 let ticketPrice = +movieSelection.value;
 
@@ -33,7 +35,7 @@ function bookingSeats() {
   movieDetails(movieSelection.selectedIndex, movieSelection.value);
 }
 
-function pageOnload() {
+function gettingAndDisplaying() {
   const selectedSeats = JSON.parse(localStorage.getItem("selectedSeats"));
 
   if (selectedSeats !== null && selectedSeats.length > 0) {

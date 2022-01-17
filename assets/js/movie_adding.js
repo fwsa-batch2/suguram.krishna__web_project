@@ -14,16 +14,13 @@ function submitHandler(event) {
   let heroName = document.getElementById("heroName").value;
   let directorName = document.getElementById("directorName").value;
   let movieImgLink = document.getElementById("movieImgLink").value;
-  let movieTrailerLink = document.getElementById("movieTrailerLink").value;
-  let movieDescription = document.getElementById("movieDescription").value;
+
 
   const movieAddingdetails = {
     movieName: movieName,
     heroName: heroName,
     directorName: directorName,
     movieImgLink: movieImgLink,
-    movieTrailerLink: movieTrailerLink,
-    movieDescription: movieDescription,
   };
 
   const movieValidation = movieNameCheck(movieName);

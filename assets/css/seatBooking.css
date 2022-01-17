@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
+  font-size: 20px;
 }
-
 
 body {
   background-color: black;
@@ -29,7 +29,6 @@ header {
   align-items: center;
   padding: 30px 10%;
   width: 100%;
-
 }
 
 .logo {
@@ -54,30 +53,25 @@ header {
   transition: all0.3s ease 0s;
   color: rgb(255, 255, 255);
 }
-.mainDiv{
+.mainDiv {
   align-items: center;
 }
 
-
 .movie-container select {
-  background-color: #fff;
-  border: 0;
-  border-radius: 5px;
-  font-size: 14px;
+  background-color: black;
+  color: gold;
+  border: 1px solid gold;
+  border-radius: 24px;
+  font-size: 20px;
   margin-left: 10px;
   margin-top: 30%;
   padding: 5px 15px 5px 15px;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
 }
-
 
 .showcase .seat:not(.occupied):hover {
   cursor: default;
   transform: scale(1);
 }
-
 
 .showcase {
   background: rgba(0, 0, 0, 0.1);
@@ -89,7 +83,6 @@ header {
   justify-content: space-between;
 }
 
-
 .showcase li {
   display: flex;
   align-items: center;
@@ -97,13 +90,11 @@ header {
   margin: 0 10px;
 }
 
-
 .showcase li small {
   margin-left: 2px;
 }
 
-
-.screen{
+.screen {
   width: 525px;
   height: 150px;
   background-color: #fff;
@@ -113,26 +104,25 @@ header {
   box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
 }
 
-.screen p{
+.screen p {
   padding-top: 10%;
   color: black;
 }
 
-
-.seatBooking{
-    margin-bottom: 30px;
+.seatBooking {
+  margin-bottom: 30px;
 }
 
-.seat.selected{
+.seat.selected {
   background-color: gold;
 }
 
-.seat.occupied{
+.seat.occupied {
   background-color: grey;
 }
 
 .seat {
-  background-color:darkslateblue;
+  background-color: darkslateblue;
   height: 20px;
   width: 25px;
   margin: 3px;
@@ -140,8 +130,7 @@ header {
   border-top-right-radius: 10px;
 }
 
-
-.seat:hover{
+.seat:hover {
   cursor: pointer;
   transform: scale(1.2);
 }
@@ -151,20 +140,42 @@ header {
   transform: scale(1.2);
 }
 
-.seatRow{
+.seatRow {
   display: flex;
   padding: 10px;
 }
 
-select{
-  background-color: red
+select {
+  background-color: red;
 }
 
 p.text {
   margin: 10px 10px 10px 10px;
+  font-size: 20px;
 }
-
 
 p.text span {
   color: gold;
+  font-size: 20px;
 }
+
+
+.submitButton{
+  width: 100%;
+}
+
+.submitButton input[type="submit"]{
+  background-color: transparent;
+  color: gold;
+  border: 1px solid gold;
+  border-radius: 24px;
+  font-size: 20px;
+  margin-top: 5%;
+  margin-left: 40%;
+  padding: 5px 15px 5px 15px;
+}
+
+.submitButton input[type="submit"]:hover{
+  cursor: pointer;
+}
+

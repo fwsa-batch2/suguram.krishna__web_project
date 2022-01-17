@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../../assets/img/pvr.jpg">
   <title>Booking Page</title>
   <link rel="stylesheet" href="./../assets/css/seatBooking.css">
 </head>
@@ -16,27 +17,27 @@
   <header>
     <a href="../index.html"><img class="logo" src="../assets/img/pvrbg.png" alt="logo"></a>
     <nav>
-        <ul class="nav_links">
-            <li><a href="../../../index.html">HOME</a></li>
-            <li><a href="./pvrsignup.html">SIGN-UP</a></li>
-            <li><a href="./about.html">ABOUT-US</a>
-            </li>
-            <li><a href="./pvrlocation.html">LOCATION</a>
-            </li>
-        </ul>
+      <ul class="nav_links">
+        <li><a href="../../../index.html">HOME</a></li>
+        <li><a href="./pvrsignup.html">SIGN-UP</a></li>
+        <li><a href="./about.html">ABOUT-US</a>
+        </li>
+        <li><a href="./pvrlocation.html">LOCATION</a>
+        </li>
+      </ul>
     </nav>
-</header>
+  </header>
 
 
   <div class="movie-container">
-    <label>Pick a movie:</label>
-    <select id="movie">
-      <option value="120">Beast (₹120)</option>
-      <option value="120">Doctor (₹120)</option>
-      <option value="120">Annathey (₹120)</option>
-      <option value="120">Vikram (₹120)</option>
-      <option value="120">Maanadu (₹120)</option>
-    </select>
+    <p>Select a movie to Book Tickets:<span><select id="movie">
+          <option value="0">Select A Movie</option>
+          <option value="120">Beast (₹120)</option>
+          <option value="120">Doctor (₹120)</option>
+          <option value="120">Annathey (₹120)</option>
+          <option value="120">Vikram (₹120)</option>
+          <option value="120">Maanadu (₹120)</option>
+        </select></span></p>
   </div>
 
 
@@ -61,7 +62,7 @@
       <p>SCREEN</p>
     </div>
     <div class="seatRow">
-      <div class="seat" onclick="seatsStatus(event)"></div>
+      <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
@@ -94,7 +95,7 @@
       <div class="seat"></div>
       <div class="seat"></div>
       <div class="seat"></div>
-      
+
       <div class="seat"></div>
     </div>
     <div class="seatRow">
@@ -173,8 +174,11 @@
     <p class="text">
       You have selected <span id="count">0</span> seats for a price of ₹<span id="total">0</span>
     </p>
-</body>
 
-<script src="./../assets/js/seatbooking.js"></script>
+    <div class="submitButton">
+      <input type="submit">
+    </div>
+    <script src="./../assets/js/seatbooking.js"></script>
+</body>
 
 </html>

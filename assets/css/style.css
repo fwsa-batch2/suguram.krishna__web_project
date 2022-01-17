@@ -443,9 +443,11 @@ span {
 
 .footer {
   color: gold;
-  /* margin-top: 20px; */
   font-size: 20px;
   font-style: bold;
+  position:absolute;
+  bottom:0;
+  width:100%;
 }
 
 .login-footer {
@@ -454,7 +456,6 @@ span {
   font-size: 20px;
   bottom: 0;
   width: 100%;
-  height: 2.5rem;
 }
 
 #invalidError {
@@ -589,6 +590,9 @@ em {
 .footer_list {
   margin-top: 15%;
   color: gold;
+  position:absolute;
+  bottom:0;
+  width:100%;
 }
 
 .tamilMovies {
