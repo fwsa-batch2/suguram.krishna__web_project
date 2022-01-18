@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <form onsubmit="submitHandler()">
         <div class="mainDiv">
             <p class="paymentDetailsTitle">Confirm Your Payment</p>
             <div class="mainCardDetails">
@@ -22,15 +23,15 @@
                 <div class="cvv">
                     <p class="paymentDetailsPara">CVV</p>
                     <div class="inputBox">
-                        <input type="password" id="Password" required title="Enter the CVV">
+                        <input type="password" id="Password" title="Enter the CVV">
                     </div>
                 </div>
             </div>
             <div class="subMainCardDetails">
-                <div class="card-number">
+                <div class="card-number">cc
                     <p class="paymentDetailsPara">Card Number</p>
                     <div class="inputBox">
-                        <input type="text" id="CVV" required title="Enter Your Card Number">
+                        <input type="text" id="CVV" title="Enter Your Card Number">
                     </div>
                 </div>
             </div>
@@ -68,10 +69,12 @@
                     </div>
                 </div>
             </div>
-            <input type="submit" value="Confirm" onclick="submitHandler()">
+            <input type="submit" value="Confirm">
         </div>
+    </form>
+</body>
 
-    <script src="./../assets/js/payment.js"></script>
+<script src="./../assets/js/payment.js"></script>
 </body>
 
 </html>
