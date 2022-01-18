@@ -30,8 +30,8 @@
 
 
   <div class="movie-container">
-    <p>Select a movie to Book Tickets:<span><select id="movie">
-          <option value="0">Select A Movie</option>
+    <p>Select a movie to Book Tickets:<span><select id="movie" autofocus>
+          <option value="0" autofocus>Select A Movie</option>
           <option value="120">Beast (₹120)</option>
           <option value="120">Doctor (₹120)</option>
           <option value="120">Annathey (₹120)</option>
@@ -172,11 +172,11 @@
     </div>
 
     <p class="text">
-      You have selected <span id="count">0</span> seats for a price of ₹<span id="total">0</span>
+      You have selected <span id="count"> 0</span> seats for a price of ₹<span id="total"> 0</span>
     </p>
 
     <div class="submitButton">
-      <input type="submit">
+      <input type="submit" onclick="submitHandler()">
     </div>
     <script src="./../assets/js/seatbooking.js"></script>
 </body>

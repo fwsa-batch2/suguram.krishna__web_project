@@ -90,7 +90,7 @@ body{
 
 }
 
-a{
+input[type="submit"]{
     background-color: gold;
     color: black;
     text-align: center;
@@ -101,7 +101,7 @@ a{
     transition: 0.5s;
 }
 
-a:hover{
+input[type="submit"]:hover{
     background-color: dodgerblue;
 }
 
