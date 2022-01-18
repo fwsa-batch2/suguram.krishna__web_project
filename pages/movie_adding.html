@@ -31,15 +31,15 @@
     <div class="movie_list">
         <form class="box" onsubmit="submitHandler(event)">
             <div class="firstPartInput">
-                <input type="text" placeholder="Movie Name" id="movieName" pattern="[A-Za-z0-9 ]+"
+                <input type="text" placeholder="Movie Name" id="movieName" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$"
                     title="Movie Name can't be Empty" autofocus required>
 
-                <input type="text" placeholder="Hero Name" id="heroName" pattern="[A-Za-z ]+"
+                <input type="text" placeholder="Hero Name" id="heroName" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$"
                     title="Hero Name can't be Empty" required>
             </div>
 
             <div class="secondPartInput">
-                <input type="text" placeholder="Director Name" id="directorName" pattern="[A-Za-z ]+"
+                <input type="text" placeholder="Director Name" id="directorName" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$"
                     title="Director Name can't be Empty" required>
 
                 <input type="url" placeholder="Movie Image Link" id="movieImgLink" title="Please Enter a Valid URL"
