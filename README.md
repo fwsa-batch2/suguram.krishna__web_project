@@ -37,4 +37,10 @@
 * Movie Name, Hero Name, Image and Description of the movie is listed in this page
 
 ### TICKET BOOKING PAGE
-##### On Progress
+* User can book tickets for the movie
+* User can select the seat which are available and already selected seats cant be booked
+* The Total cost for the selected seat is shown in the page 
+* The User will be redirected to the payment page after selecting the seats.
+
+### PAYMENT PAGE
+#### On Progress
