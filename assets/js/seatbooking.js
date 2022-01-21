@@ -1,4 +1,3 @@
-alert("Please Select the Movie You want To Book")
 
 const seatBooking = document.querySelector(".seatBooking");
 const seatSelection = document.querySelectorAll(
@@ -9,9 +8,8 @@ const toatalAmount = document.getElementById("total");
 const movieSelection = document.getElementById("movie");
 console.log(movieSelection);
 
-
-
 let ticketPrice = +movieSelection.value;
+
 
 function bookingSeats() {
   const selectedSeats = document.querySelectorAll(".seatRow .seat.selected");
@@ -21,11 +19,14 @@ function bookingSeats() {
   seatCount.innerText = selectedSeatsCount;
   toatalAmount.innerText = selectedSeatsCount * ticketPrice;
 
+
+ 
 }
 
 movieSelection.addEventListener("change", (e) => {
   ticketPrice = +e.target.value;
   bookingSeats();
+
 });
 
 seatBooking.addEventListener("click", (e) => {
@@ -36,6 +37,7 @@ seatBooking.addEventListener("click", (e) => {
     e.target.classList.toggle("selected");
 
     bookingSeats();
+   
   }
 });
 
