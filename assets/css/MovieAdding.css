@@ -71,7 +71,7 @@ header {
 
 .tamilMovies img {
   margin-top: 20%;
-  border-radius: 7%;
+  border-radius: 2%;
   width: 100%;
   height: 100%;
 }
@@ -97,13 +97,40 @@ header {
   transition: none;
 }
 
+/* .imageInside p {
+  color: gold;
+} */
 
-.imageInside p{
-    color: gold;
+.imagePoster {
+  padding: 10px 8px 30px;
+  /* background-color: red; */
+  font-family: SF-Medium;
 }
 
-.subDiv{
-    width: 300px;
-    height: 300px;
-    background-color: red;
+.subDiv {
+  width: 350px;
+  height: 230px;
+  float: left;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.movieInfo{
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  z-index: 2;
+  transition: all .3s ease-out;
+}
+
+.movieContent{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85%;
+  color: #fff;
+  padding: 10px;
+  text-shadow: 0 3px 7px rgb(0 0 0 / 80%);
+  transition: all .3s ease-out;
 }
