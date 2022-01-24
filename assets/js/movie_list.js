@@ -15,14 +15,17 @@ for (let i of movieDetails) {
   let nameOfDirector = i.directorName;
   let imageLink = i.movieImgLink;
 
-  movie += `<div class="imagePoster">
-  <a href="./beast.html"><img src="${imageLink}" alt="Movie Image"></a>
-  <div class="imageInside"><p>${nameOfMovie}<span class="imageHeroName">${nameOfHero}</span><span class="imageDirectorName">${nameOfDirector}<span><span><a class="button" href="./newBooking.html"><button>Book
-  Tickets</button></a></span></p></div>
-  <div class="movieName">
-      <p>${nameOfMovie}</p>
+  movie +=  `<div class="imagePoster">
+  <div class="subDiv">
+      <a href="./annathe.html"><img src="${imageLink}" alt="Movie Image" /></a>
   </div>
-</div>`;
+  <div class="movieInfo">
+      <div class="movieContent">
+          <p>${nameOfMovie}</p>
+          <p>${nameOfHero}⋅(U/A)⋅${nameOfDirector}</p>
+          <input class="bookingButton" type="submit" value="Book Tickets">
+      </div>
+  </div>`
 }
 
 let div = document.getElementById("poster");
