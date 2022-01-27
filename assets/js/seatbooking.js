@@ -15,7 +15,7 @@ function bookingSeats() {
   const selectedSeats = document.querySelectorAll(".seatRow .seat.selected");
 
   const selectedSeatsCount = selectedSeats.length;
-
+  console.log(selectedSeatsCount);
   seatCount.innerText = selectedSeatsCount;
   toatalAmount.innerText = selectedSeatsCount * ticketPrice;
 
