@@ -34,13 +34,19 @@
                 <input type="text" placeholder="Movie Name" id="movieName" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$"
                     title="Movie Name can't be Empty" autofocus required>
 
-                <input type="text" placeholder="Hero Name" id="heroName" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$"
+                <input type="text" placeholder="Hero Name" id="heroName" pattern="^[a-zA-Z_]+( [a-zA-Z_]+)*$"
                     title="Hero Name can't be Empty" required>
             </div>
 
             <div class="secondPartInput">
-                <input type="text" placeholder="Director Name" id="directorName" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$"
-                    title="Director Name can't be Empty" required>
+                <input type="text" placeholder="Movie Language" id="movieLang" pattern="^[a-zA-Z0_]+( [a-zA-Z_]+)*$"
+                    title="Movie Language can't be Empty" required>
+
+                <input type="text" placeholder="CBFC Rating" id="cbfcRating" pattern="^[a-zA-Z0_]+( [a-zA-Z_]+)*$"
+                    title="CBFC Rating can't be Empty" required>
+
+                <input type="text" placeholder="Movie Type" id="movieType" pattern="^[a-zA-Z0_]+( [a-zA-Z_]+)*$"
+                    title="Movie Type can't be Empty" required>
 
                 <input type="url" placeholder="Movie Image Link" id="movieImgLink" title="Please Enter a Valid URL"
                     required>

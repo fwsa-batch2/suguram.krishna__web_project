@@ -44,5 +44,5 @@ seatBooking.addEventListener("click", (e) => {
 bookingSeats();
 
 function submitHandler(){
-  window.location.href="./../../pages/payment.html"
+  window.location.href="./../pages/payment.html"
 }

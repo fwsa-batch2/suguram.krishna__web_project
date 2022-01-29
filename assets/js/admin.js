@@ -8,7 +8,7 @@ function submitHandler(event){
 
     if(adminId === adminIdInput && adminPass === adminPassInput){
         alert("Welcome Admin");
-        window.location.href="./../../pages/admin home.html"
+        window.location.href="./../pages/admin home.html"
     }
     else{
         alert("Invalid Admin Credentials")
@@ -25,7 +25,7 @@ function adminRedirection(event){
 
     if(adminId === adminIdInput && adminPass === adminPassInput){
         alert("Welcome Admin");
-        window.location.href="./../../pages/movie_adding.html"
+       window.location.href="./../pages/movie_adding.html"
     }
     else{
         alert("Invalid Admin Credentials")

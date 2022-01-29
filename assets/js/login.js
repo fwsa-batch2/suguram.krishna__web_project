@@ -23,7 +23,7 @@ function submitHandler(event) {
       "Invalid login credentials";
     return null;
   } else {
-    window.location.href = "./../../index.html";
+    window.location.href = "./../index.html";
     localStorage.setItem("LoggedInUser", userMailId);
   }
 }

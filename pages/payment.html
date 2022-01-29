@@ -11,20 +11,20 @@
 </head>
 
 <body>
-    <form onsubmit="submitHandler()">
+    <form onsubmit="submitHandler(event)">
         <div class="mainDiv">
             <p class="paymentDetailsTitle">Confirm Your Payment</p>
             <div class="mainCardDetails">
                 <div class="cardHolderName">
                     <p class="paymentDetailsPara">Card Holder Name</p>
                     <div class="inputBox">
-                        <input type="text" id="Name" autofocus title="Please Enter Your Name As in the Card" required>
+                        <input type="text" id="Name" autofocus title="Please Enter Your Name As in the Card" placeholder="Enter Card Holder Name" required>
                     </div>
                 </div>
                 <div class="cvv">
                     <p class="paymentDetailsPara">CVV</p>
                     <div class="inputBox">
-                        <input type="password" id="Password" title="Enter the CVV" maxlength="3" required>
+                        <input type="password" id="Password" title="Enter the CVV" placeholder="CVV" maxlength="3" required>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@
                     </div>
                 </div>
             </div>
-            <input type="submit" value="Confirm">
+            <input type="submit" value="Confirm Payment" onclick="onclickEvent()">
         </div>
     </form>
 </body>

@@ -33,7 +33,7 @@ function submitHandler(event) {
   if (passMatch) {
     movieDetails.push(signUpDetails);
     localStorage.setItem("signUpDetails", JSON.stringify(movieDetails));
-    window.location.href = "../pages/pvrlogin.html";
+    window.location.href = "./../pages/pvrlogin.html";
   } else {
     alert("Password Is not matching");
   }

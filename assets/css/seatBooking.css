@@ -64,7 +64,7 @@ header {
   border-radius: 24px;
   font-size: 20px;
   margin-left: 10px;
-  margin-top: 30%;
+  margin-top: 15%;
   padding: 5px 15px 5px 15px;
 }
 
@@ -95,18 +95,20 @@ header {
 }
 
 .screen {
-  width: 525px;
-  height: 150px;
-  background-color: #fff;
+  width: 800px;
+  height: 350px;
+  background-image: url("./../img/snsm.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   color: black;
   text-align: center;
   margin-bottom: 10%;
-  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+  box-shadow: 0 3px 40px rgba(255, 255, 255, 0.7);
 }
 
 .screen p {
-  padding-top: 10%;
-  color: black;
+  padding-top: 50%;
+  color: gold;
 }
 
 .seatBooking {
@@ -118,16 +120,25 @@ header {
 }
 
 .seat.occupied {
-  background-color: grey;
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
 }
 
 .seat {
-  background-color: darkslateblue;
+  background-color: #F2F2F2;
   height: 20px;
   width: 25px;
   margin: 3px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+.seat:nth-of-type(5) {
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(5) {
+  margin-left: 18px;
 }
 
 .seat:hover {
@@ -143,28 +154,29 @@ header {
 .seatRow {
   display: flex;
   padding: 10px;
+  width: inherit;
 }
 
 select {
-  background-color: red;
+  background-color: gold;
+  appearance: none;
 }
 
 p.text {
-  margin: 10px 10px 10px 10px;
-  font-size: 20px;
+  text-align: center;
+  font-size: 30px;
 }
 
 p.text span {
   color: gold;
-  font-size: 20px;
+  font-size: 30px;
 }
 
-
-.submitButton{
+.submitButton {
   width: 100%;
 }
 
-.submitButton input[type="submit"]{
+.submitButton input[type="submit"] {
   background-color: transparent;
   color: gold;
   border: 1px solid gold;
@@ -175,7 +187,6 @@ p.text span {
   padding: 5px 15px 5px 15px;
 }
 
-.submitButton input[type="submit"]:hover{
+.submitButton input[type="submit"]:hover {
   cursor: pointer;
 }
-

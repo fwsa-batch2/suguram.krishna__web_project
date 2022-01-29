@@ -621,3 +621,21 @@ em {
   position: relative;
   transition: all .3s ease-out;
 }
+
+.finalPageButn{
+  border: 2px solid gold;
+  background: transparent;
+  color: white;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 20px
+}
+
+.finalPageButn:hover{
+  cursor: pointer;
+  background-color: #d8d8ac;
+  background-image: linear-gradient(315deg, #d8d8ac 0%, #c8c85e 74%);
+  border: 2px solid ;
+  color: black;
+}

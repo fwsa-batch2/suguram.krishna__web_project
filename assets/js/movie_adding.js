@@ -12,15 +12,19 @@ function submitHandler(event) {
   console.group("Adding Movie Details");
   let movieName = document.getElementById("movieName").value;
   let heroName = document.getElementById("heroName").value;
-  let directorName = document.getElementById("directorName").value;
   let movieImgLink = document.getElementById("movieImgLink").value;
+  let cbfcRating = document.getElementById("cbfcRating").value;
+  let movieType = document.getElementById("movieType").value;
+  let movieLang = document.getElementById("movieLang").value;
 
 
   const movieAddingdetails = {
     movieName: movieName,
     heroName: heroName,
-    directorName: directorName,
     movieImgLink: movieImgLink,
+    cbfcRating: cbfcRating,
+    movieType: movieType,
+    movieLang: movieLang,
   };
 
   const movieValidation = movieNameCheck(movieName);
@@ -51,7 +55,7 @@ function submitHandler(event) {
   movieDetails.push(movieAddingdetails);
   localStorage.setItem("details", JSON.stringify(movieDetails));
 
-  window.location.href = "./../../pages/tamilMovieList.html";
+  window.location.href = "./../pages/movieList.html";
 
   console.groupEnd("Adding Movie Details");
 }

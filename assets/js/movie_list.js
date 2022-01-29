@@ -12,21 +12,32 @@ let movieDetails = JSON.parse(localStorage.getItem("details"));
 for (let i of movieDetails) {
   let nameOfMovie = i.movieName;
   let nameOfHero = i.heroName;
-  let nameOfDirector = i.directorName;
   let imageLink = i.movieImgLink;
+  let movieLanguage = i.movieLang;
+  let movieCertificate = i.cbfcRating;
+  let typeOfMovie = i.movieType;
 
-  movie +=  `<div class="imagePoster">
+
+  movie += `  <div class="imagePoster">
   <div class="subDiv">
-      <a href="./annathe.html"><img src="${imageLink}" alt="Movie Image" /></a>
+      <img src="${imageLink}" alt="Movie Image" />
+      <p>${nameOfMovie}</p>
   </div>
   <div class="movieInfo">
       <div class="movieContent">
           <p>${nameOfMovie}</p>
-          <p>${nameOfHero}⋅(U/A)⋅${nameOfDirector}</p>
-          <input class="bookingButton" type="submit" value="Book Tickets">
+          <p>${nameOfHero}</p>
+          <p>${movieLanguage}⋅${movieCertificate}⋅${typeOfMovie}</p>
+          <input class="bookingButton" type="submit" value="Book Tickets" onclick="onclickEvent()">
       </div>
-  </div>`
+  </div>
+</div>`;
 }
 
 let div = document.getElementById("poster");
 div.innerHTML += movie;
+
+
+function onclickEvent(){
+  window.location.href="./../pages/newBooking.html"
+}
