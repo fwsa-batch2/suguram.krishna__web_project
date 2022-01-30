@@ -450,6 +450,16 @@ span {
   width:100%;
 }
 
+
+.movieInfoFooter{
+  color: gold;
+  font-size: 20px;
+  font-style: bold;
+  bottom:0;
+  width:100%;
+}
+
+
 .login-footer {
   position: absolute;
   color: gold;
