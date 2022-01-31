@@ -20,7 +20,7 @@ function bookingSeats() {
   toatalAmount.innerText = selectedSeatsCount * ticketPrice;
 
 
- 
+
 }
 
 movieSelection.addEventListener("change", (e) => {
@@ -37,12 +37,33 @@ seatBooking.addEventListener("click", (e) => {
     e.target.classList.toggle("selected");
 
     bookingSeats();
-   
+
   }
 });
 
 bookingSeats();
 
-function submitHandler(){
-  window.location.href="./../pages/payment.html"
+function submitHandler() {
+  window.location.href = "./../pages/payment.html"
 }
+
+
+//Movie Option List Updating
+
+let movie = "";
+
+let movieDetails = JSON.parse(localStorage.getItem("details"));
+for (let i of movieDetails) {
+  let nameOfMovie = i.movieName;
+
+
+  movie +=  `<div class="movie-container">
+  <p>Select a movie to Book Tickets:<span><select id="movie">
+        <option value="120">${nameOfMovie} (₹120)</option>
+      </select></span></p>
+</div>`
+}
+
+let div = document.getElementById("movie");
+div.innerHTML += movie;
+
