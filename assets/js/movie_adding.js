@@ -55,7 +55,7 @@ function submitHandler(event) {
   movieDetails.push(movieAddingdetails);
   localStorage.setItem("details", JSON.stringify(movieDetails));
 
-  window.location.href = "./../pages/movieList.html";
+  window.location.href = "./../../pages/movieList.html";
 
   console.groupEnd("Adding Movie Details");
 }
