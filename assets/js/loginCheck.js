@@ -1,4 +1,5 @@
-const loggedInUser = JSON.parse(localStorage.getItem("LOGGED_IN_USER"))
+const loggedInUser = JSON.parse(localStorage.getItem("LoggedInUser"))
+console.log(loggedInUser);
 
 if(loggedInUser === null){
     window.location.href= "./../pages/pvrlogin.html"

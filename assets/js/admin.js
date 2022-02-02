@@ -25,7 +25,7 @@ function adminRedirection(event){
 
     if(adminId === adminIdInput && adminPass === adminPassInput){
         alert("Welcome Admin");
-       window.location.href="./../pages/movie_adding.html"
+       window.location.href="./../pages/movieAdding.html"
     }
     else{
         alert("Invalid Admin Credentials")
