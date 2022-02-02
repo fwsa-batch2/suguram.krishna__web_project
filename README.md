@@ -1,5 +1,11 @@
 ### html-project-template
 
+### Important Links
+
+## Live URL Link - https://fwsa-batch2.github.io/suguram.krishna__web_project/
+## GitHub Link - https://github.com/fwsa-batch2/suguram.krishna__web_project
+## Sonarcloud Link - https://sonarcloud.io/project/overview?id=fwsa-batch2_suguram.krishna__web_project 
+
 ### Features
 
 1. LOGIN PAGE (Completed)
