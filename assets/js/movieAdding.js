@@ -7,6 +7,8 @@ function pageOnLoad() {
   }
 }
 
+
+// storing the data in localstorage
 function submitHandler(event) {
   event.preventDefault();
   console.group("Adding Movie Details");

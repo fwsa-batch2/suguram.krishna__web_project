@@ -12,6 +12,9 @@ function onPageLoad() {
   console.groupEnd("onPageLoad");
 }
 
+
+// Checking whether the user already have a account and shows alert
+
 function submitHandler(event) {
   event.preventDefault();
   console.group("userInput");
@@ -34,6 +37,8 @@ function submitHandler(event) {
   }
   console.groupEnd("userInput");
 }
+
+// Checking whether the user already have a account
 
 function emailValid(current_email) {
   console.group("emailValidiation");

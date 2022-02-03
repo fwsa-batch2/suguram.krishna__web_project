@@ -1,3 +1,5 @@
+//admin login validation 
+
 function submitHandler(event){
     event.preventDefault()
     const adminId = "admin"
@@ -14,6 +16,9 @@ function submitHandler(event){
         alert("Invalid Admin Credentials")
     }
 }
+
+
+// admin function for the adding page
 
 function adminRedirection(event){
     event.preventDefault()

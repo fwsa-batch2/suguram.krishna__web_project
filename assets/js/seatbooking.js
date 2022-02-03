@@ -11,6 +11,7 @@ console.log(movieSelection);
 let ticketPrice = +movieSelection.value;
 
 
+// price and seat booking updation
 function bookingSeats() {
   const selectedSeats = document.querySelectorAll(".seatRow .seat.selected");
 
@@ -43,6 +44,8 @@ seatBooking.addEventListener("click", (e) => {
 
 bookingSeats();
 
+
+// Redirecting to Payment Page
 function submitHandler() {
   window.location.href = "./../pages/payment.html"
 }

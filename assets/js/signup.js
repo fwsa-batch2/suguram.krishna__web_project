@@ -7,6 +7,8 @@ function pageOnLoad() {
   }
 }
 
+
+//Storing values in localstorage
 function submitHandler(event) {
   event.preventDefault();
   const name = document.getElementById("userName").value;
@@ -39,6 +41,9 @@ function submitHandler(event) {
   }
 }
 
+
+// Confirm Password Validation
+
 function check() {
   let a = document.getElementById("password").value;
   let b = document.getElementById("confirmPassword").value;
@@ -46,6 +51,8 @@ function check() {
     return true;
   }
 }
+
+// Checking for mail Duplication
 
 function mailCheck(mailInAct) {
   const userEmail = JSON.parse(localStorage.getItem("signUpDetails"));
@@ -65,6 +72,9 @@ function mailCheck(mailInAct) {
 
   return alreadyExsists;
 }
+
+
+//Show password Function
 
 function showPassword() {
   const passCheckBox = document.getElementById("password");

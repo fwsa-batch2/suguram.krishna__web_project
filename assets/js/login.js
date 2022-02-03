@@ -9,6 +9,7 @@ function pageOnLoad() {
   console.log(loginUser);
 }
 
+// Checking wheter Email and Password is already Exsist
 function submitHandler(event) {
   event.preventDefault();
 
@@ -28,6 +29,7 @@ function submitHandler(event) {
   }
 }
 
+
 function isUserDetailExist(userMailId, userPassword) {
   let isExist = false;
   const lengthOfArray = userDetails.length;
@@ -46,6 +48,8 @@ function isUserDetailExist(userMailId, userPassword) {
   return isExist;
 }
 
+
+//show password
 function showPassword() {
   const passCheckBox = document.getElementById("password");
 
