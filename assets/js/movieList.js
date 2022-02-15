@@ -1,6 +1,6 @@
 let movie = "";
 
-// Updating Movie List from geeting data from localstorage
+// Updating Movie List from getting data from localstorage
 function pageOnLoad() {
   const movieInList = JSON.parse(localStorage.getItem("details"));
   if (movieInList !== null) {

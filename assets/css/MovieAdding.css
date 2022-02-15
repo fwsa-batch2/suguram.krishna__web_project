@@ -130,6 +130,14 @@ header {
   float: left;
   padding-right: 15px;
   padding-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.subDiv p{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
