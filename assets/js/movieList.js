@@ -29,7 +29,7 @@ for (let i of movieDetails) {
           <p>${nameOfMovie}</p>
           <p>${nameOfHero}</p>
           <p>${movieLanguage}⋅${movieCertificate}⋅${typeOfMovie}</p>
-          <input class="bookingButton" type="submit" value="Book Tickets" onclick="onclickEvent()">
+          <button class="bookingButton"  value="Doctor" name="Book Tickets" onclick="onclickEvent()">Book Tickets</button>
       </div>
   </div>
 </div>`;
@@ -42,3 +42,11 @@ div.innerHTML += movie;
 function onclickEvent(){
   window.location.href="./../pages/newBooking.html"
 }
+
+
+$(function(){
+  $("button").click(function() {
+      var fired_button = $(this).val();
+      alert(fired_button);
+  });
+});
