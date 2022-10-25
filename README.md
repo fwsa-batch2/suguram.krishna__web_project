@@ -49,4 +49,4 @@
 * The User will be redirected to the payment page after selecting the seats.
 
 ### PAYMENT PAGE
-#### On Progress
+#### Static Page
